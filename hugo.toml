@@ -1,0 +1,47 @@
+baseURL = "https://ines4ia.github.io/"
+title = "INES.IA"
+languageCode = "en-us"
+
+[params]
+  description = "Brazilian Institute for Software Engineering and Artificial Intelligence — a national research network advancing the science and practice of software engineering in the age of AI."
+  email = "contact@ines.org.br"
+  about = "INES.IA is a national research network, led by Prof. Augusto Sampaio (UFPE), advancing the science and practice of software engineering in the age of AI. We bring together researchers from across Brazil and international partners to tackle the most pressing challenges at the intersection of Software Engineering and Artificial Intelligence."
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[[menus.main]]
+  identifier = "about"
+  name = "About Us"
+  url = "/about/"
+  weight = 1
+
+[[menus.main]]
+  identifier = "news"
+  name = "News"
+  url = "/news/"
+  weight = 2
+
+[[menus.main]]
+  identifier = "research"
+  name = "Research Themes"
+  url = "/research/"
+  weight = 3
+
+[[menus.main]]
+  identifier = "case-studies"
+  name = "Case Studies"
+  url = "/case-studies/"
+  weight = 4
+
+[[menus.main]]
+  identifier = "results"
+  name = "Results"
+  url = "/results/"
+  weight = 5
+
+[[menus.main]]
+  identifier = "events"
+  name = "Events"
+  url = "/events/"
+  weight = 6

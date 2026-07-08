@@ -1,0 +1,10 @@
+members:
+  - name: "Augusto Sampaio"
+    role: "Project Coordinator"
+    photo: "/img/team/augusto-sampaio.jpg"
+  - name: "Paulo Borba"
+    role: "Researcher"
+    photo: "/img/team/paulo-borba.jpg"
+  - name: "Sérgio Soares"
+    role: "Researcher"
+    photo: "/img/team/sergio-soares.jpg"

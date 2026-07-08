@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    {{ with .Params.label }}<p class="section-label">{{ . }}</p>{{ end }}
+    {{ if .Params.tag }}<p class="section-label">{{ .Params.tag }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ if not .Params.hideDate }}
+    <p style="color:var(--text-muted);font-size:15px;margin-top:8px">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    </p>
+    {{ end }}
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+{{ end }}

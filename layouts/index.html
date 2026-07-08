@@ -1,0 +1,114 @@
+{{ define "main" }}
+
+{{/* ── Hero ─────────────────────────────────────────────────────────── */}}
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="hero-eyebrow">AI for SE &nbsp;·&nbsp; SE for AI</p>
+    <h1>Brazilian Institute for<br><span class="accent">Software Engineering</span><br>and Artificial Intelligence</h1>
+    <p class="hero-desc">{{ .Site.Params.description }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="/about/">Learn More</a>
+      <a class="btn btn-outline-light" href="/research/">Research Themes</a>
+    </div>
+  </div>
+</section>
+
+{{/* ── About Us ──────────────────────────────────────────────────────── */}}
+<section class="about-section">
+  <div class="about-inner">
+    <div class="about-photo">
+      <img src="/img/research-themes.png" alt="INES.IA researchers collaborating">
+    </div>
+    <div class="about-content">
+      <span class="section-label">About Us</span>
+      <p>{{ .Site.Params.about | default "INES.IA is a national research network advancing the science and practice of software engineering in the age of AI. We bring together researchers from across Brazil and international partners to tackle the most pressing challenges at the intersection of Software Engineering and Artificial Intelligence." }}</p>
+      <a class="btn btn-outline-light" href="/about/">More about us</a>
+    </div>
+  </div>
+</section>
+
+{{/* ── Recent News ──────────────────────────────────────────────────── */}}
+<section class="news-section">
+  <div class="container">
+    <div class="news-header">
+      <h2>Recent news</h2>
+      <a class="btn btn-outline" href="/news/">See more</a>
+    </div>
+    <div class="news-grid">
+      {{ range first 3 (where site.RegularPages "Section" "news") }}
+      <article class="news-card">
+        <div class="news-card-image">
+          {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
+          {{ with .Params.tag }}<span class="news-card-tag">{{ . }}</span>{{ end }}
+        </div>
+        <div class="news-card-body">
+          <time class="news-card-date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+          <h3 class="news-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="news-card-excerpt">{{ .Summary | truncate 140 }}</p>
+          <div class="news-card-footer">
+            <a href="{{ .RelPermalink }}">Read more →</a>
+          </div>
+        </div>
+      </article>
+      {{ else }}
+      <p style="color:var(--text-dark-muted); grid-column:1/-1;">No news yet — check back soon.</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ── Research Themes Banner ───────────────────────────────────────── */}}
+<div class="research-banner">
+  <div class="research-banner-text">
+    <h2>Take a look at our<br>Research Themes</h2>
+    <a class="btn btn-primary" href="/research/">See more</a>
+  </div>
+  <div class="research-banner-image">
+    <img src="/img/research-themes.png" alt="Researchers collaborating">
+  </div>
+</div>
+
+{{/* ── Key Figures ──────────────────────────────────────────────────── */}}
+<div class="figures">
+  <div class="container">
+    <div class="figures-grid">
+      <div class="figure-item">
+        <div class="figure-number">50+</div>
+        <div class="figure-label">Researchers</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-number">14</div>
+        <div class="figure-label">Institutions</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-number">3</div>
+        <div class="figure-label">Regions</div>
+      </div>
+      <div class="figure-item">
+        <div class="figure-number">4</div>
+        <div class="figure-label">Countries</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/* ── Meet the Team ────────────────────────────────────────────────── */}}
+<section class="team-section">
+  <div class="container">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      {{ range hugo.Data.team.members }}
+      <div class="team-member">
+        <img class="team-avatar" src="{{ .photo }}" alt="{{ .name }}">
+        <p class="team-name">{{ .name }}</p>
+        {{ with .role }}<p class="team-role">{{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <a class="btn btn-outline" href="/about/">See our team</a>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,49 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    {{ with .Params.label }}<p class="section-label">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="prose" style="margin-top:16px">{{ . }}</div>{{ end }}
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container">
+    {{ if eq .Section "news" }}
+    <div class="news-list-grid">
+      {{ range .Pages }}
+      <article class="news-card">
+        <div class="news-card-image">
+          {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
+          {{ with .Params.tag }}<span class="news-card-tag">{{ . }}</span>{{ end }}
+        </div>
+        <div class="news-card-body">
+          <time class="news-card-date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+          <h2 class="news-card-title" style="font-size:18px"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="news-card-excerpt">{{ .Summary | truncate 160 }}</p>
+          <div class="news-card-footer"><a href="{{ .RelPermalink }}">Read more →</a></div>
+        </div>
+      </article>
+      {{ else }}
+      <p style="color:var(--text-muted)">No posts yet — check back soon.</p>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div class="prose">
+      {{ range .Pages }}
+      <article style="margin-bottom:40px; padding-bottom:40px; border-bottom:1px solid var(--border)">
+        <h2 style="margin-top:0"><a href="{{ .RelPermalink }}" style="color:var(--text)">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .RelPermalink }}" style="font-size:14px;font-weight:600">Read more →</a>
+      </article>
+      {{ else }}
+      <p style="color:var(--text-muted)">Content coming soon.</p>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
