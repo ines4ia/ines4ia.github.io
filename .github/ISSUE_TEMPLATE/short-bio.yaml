@@ -17,6 +17,25 @@ body:
       description: Please include your name as you wish to be shown on the website.
     validations:
       required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Current role in INES.IA
+      options:
+        - Faculty
+        - Post-Doc Researcher
+        - PhD Student
+        - Masters Student
+        - Undergraduate Student
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Please include your current affiliation in the format (Full Institution Name - ACRONYM).
+    validations:
+      required: true
   - type: textarea
     id: short-bio
     attributes:
@@ -39,7 +58,7 @@ body:
     validations:
       required: true
   - type: input
-    id: name
+    id: personal-webpage
     attributes:
       label: Personal Webpage
       description: Please include the link to your personal website (if any).
