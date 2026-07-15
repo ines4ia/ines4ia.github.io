@@ -11,6 +11,7 @@
 <div class="page-body">
   <div class="container">
     {{ $themes := (index hugo.Data "research-themes").themes }}
+    {{ $themePubs := where (index hugo.Data "publications").publications "relatedType" "theme" }}
     {{ $disciplines := slice "Requirements Analysis & Management" "Project Management" "Configuration Management" "Testing & Code Review" "Verification" "Design & Architecture" "Implementation & Optimization" "Maintenance & Evolution" }}
     {{ $perspectiveOrder := slice "SE4AI" "AI4SE" }}
 
@@ -22,9 +23,12 @@
         <div class="theme-pair">
           {{ range $perspectiveOrder }}
             {{ range where $byDiscipline "perspective" . }}
-            <div class="theme-card theme-card--{{ .perspective | lower }}">
+            <div class="theme-card theme-card--{{ .perspective | lower }}" id="{{ .slug }}">
               <span class="theme-card-tag">{{ .perspective }}</span>
               <p class="theme-card-desc">{{ .description }}</p>
+              {{ if gt (len (where $themePubs "relatedSlug" .slug)) 0 }}
+              <a class="case-study-pub-link" href="/results/#{{ .slug }}">Related publications →</a>
+              {{ end }}
             </div>
             {{ end }}
           {{ end }}
@@ -36,9 +40,12 @@
     <div class="theme-discipline">
       <h2 class="theme-discipline-title">{{ .discipline }}</h2>
       <div class="theme-pair theme-pair--single">
-        <div class="theme-card theme-card--transversal">
+        <div class="theme-card theme-card--transversal" id="{{ .slug }}">
           <span class="theme-card-tag">Transversal</span>
           <p class="theme-card-desc">{{ .description }}</p>
+          {{ if gt (len (where $themePubs "relatedSlug" .slug)) 0 }}
+          <a class="case-study-pub-link" href="/results/#{{ .slug }}">Related publications →</a>
+          {{ end }}
         </div>
       </div>
     </div>

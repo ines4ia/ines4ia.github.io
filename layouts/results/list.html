@@ -11,21 +11,25 @@
 <div class="page-body">
   <div class="container">
     {{ $pubs := (index hugo.Data "publications").publications }}
-    {{ $domainOrder := slice "Health" "Education" "Environmental Crisis Management" "Justice" "Carbon Credits" "Robotics" }}
+    {{ $caseStudyPubs := where $pubs "relatedType" "case-study" }}
+    {{ $themePubs := where $pubs "relatedType" "theme" }}
 
-    {{ range $domainOrder }}
-      {{ $domain := . }}
-      {{ $group := sort (where $pubs "domain" $domain) "year" "desc" }}
+    {{ range (index hugo.Data "case-studies").studies }}
+      {{ $group := sort (where $caseStudyPubs "relatedSlug" .slug) "year" "desc" }}
       {{ if gt (len $group) 0 }}
-      <h2 id="{{ $domain | urlize }}" class="pub-domain-title">{{ $domain }}</h2>
+      <h2 id="{{ .slug }}" class="pub-domain-title">{{ .domain }}</h2>
       <div class="pub-list">
-        {{ range $group }}
-        <article class="pub-card">
-          <h3 class="pub-title"><a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a></h3>
-          <p class="pub-authors">{{ .authors }}</p>
-          <p class="pub-venue">{{ .venue }} · {{ .year }}</p>
-        </article>
-        {{ end }}
+        {{ range $group }}{{ partial "pub-card.html" . }}{{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+
+    {{ range (index hugo.Data "research-themes").themes }}
+      {{ $group := sort (where $themePubs "relatedSlug" .slug) "year" "desc" }}
+      {{ if gt (len $group) 0 }}
+      <h2 id="{{ .slug }}" class="pub-domain-title">{{ .discipline }} — {{ .perspective }}</h2>
+      <div class="pub-list">
+        {{ range $group }}{{ partial "pub-card.html" . }}{{ end }}
       </div>
       {{ end }}
     {{ end }}
