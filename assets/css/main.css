@@ -125,7 +125,7 @@ section { padding: 80px 0; }
   padding: 0 24px;
 }
 
-.nav-logo img { height: 36px; width: auto; }
+.nav-logo img { height: 48px; width: auto; }
 
 .nav-links {
   display: flex;
