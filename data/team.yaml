@@ -106,6 +106,17 @@ members:
     lattes: "http://lattes.cnpq.br/2147157840592913"
     webpage: "https://homepages.dcc.ufmg.br/~mtov/"
 
+  - name: "Pedro Garcia Freitas"
+    slug: "pedro-garcia-freitas"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade de Brasília - UnB"
+    photo: "/img/team/pedro-garcia-freitas.png"
+    bio: "Pedro Garcia Freitas has been an Adjunct A Professor in the Department of Computer Science at the University of Brasília (UnB) since February 2023. He earned his Ph.D. in Informatics from UnB in 2017 and his Master's degree in 2013, and completed a Bachelor's degree in Computational Physics at the same institution in 2011. Between 2014 and 2015, he worked at the Delft University of Technology (TU Delft) in the Netherlands. His professional career also includes experience at Samsung R&D Brazil (SRBR), where he worked as a specialist researcher in video/image processing from 2018 to 2022 and as an artificial intelligence specialist from 2022 to 2023. His research interests focus on digital signal processing, with an emphasis on video and still image processing. He is also interested in immersive media such as light fields and point clouds. His areas of work include augmented, virtual, and mixed reality, quality of experience (QoE), computer vision, and machine learning. He serves as a reviewer for several journals, including IEEE Transactions on Multimedia, IEEE Transactions on Image Processing, Signal Processing: Image Communication, IEEE Transactions on Artificial Intelligence, Journal of Electronic Imaging (SPIE), and IEEE Signal Processing Letters, among others. In recognition of his work, he received the Best Thesis award at the Workshop of Thesis and Dissertations of the 31st SIBGRAPI, in the \"Image Processing/Computer Vision/Pattern\" category, in 2018. He also had the honor of participating as a member of the Brazilian delegation to the ISO/IEC JTC1/SC29/WG1 (JPEG) committee, serving as editor of Parts 3 and 4 of the ISO/IEC 21794 (JPEG Pleno) international standard."
+    orcid: "https://orcid.org/0000-0003-0866-658X"
+    lattes: "http://lattes.cnpq.br/0669244312752630"
+    webpage: "https://pedrogarcia.gitlab.io/"
+
   - name: "Rodrigo Bonifácio"
     slug: "rodrigo-bonifacio"
     category: "Faculty"
@@ -173,6 +184,16 @@ members:
     webpage: "https://www.westernsydney.edu.au/icns/about/people/research-assistants/rafael-macieira"
 
   # ── Students (PhD, MSc, Undergraduate, ...) ──────────────────────────
+  - name: "Andrezza de Melo Bonfim"
+    slug: "andrezza-de-melo-bonfim"
+    category: "Student"
+    role: "MSc Student"
+    affiliation: "Universidade Federal de Pernambuco - UFPE"
+    bio: "Andrezza de Melo Bonfim holds a Bachelor's degree in Computer Engineering from the Federal University of Amazonas (UFAM, 2019) and a specialization in Software Engineering (2025). She is currently pursuing a Master's degree in Computer Science at the Federal University of Pernambuco (CIn/UFPE). She works as a Product Owner at a Science and Technology Institute (ICT), leading teams in the development of highly complex software. She has solid technical experience in solutions for the Android ecosystem, having worked at a Samsung institute with a focus on the Framework and SystemUI layers, and has experience with Research, Development, and Innovation (R&D) projects."
+    orcid: "https://orcid.org/0009-0009-3225-5079"
+    lattes: "http://lattes.cnpq.br/8496297176612116"
+    webpage: "https://www.linkedin.com/in/andrezzabonfim"
+
   - name: "Fagner Dias"
     slug: "fagner-dias"
     category: "Student"
