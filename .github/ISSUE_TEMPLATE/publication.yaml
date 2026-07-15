@@ -1,0 +1,89 @@
+name: New Publication
+description: Register a new paper to be added to the INES.IA website's Results page.
+title: "[Publication]: "
+labels: ["enhancement", "publication"]
+assignees:
+  - rbonifacio
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in the paper's details below. This information will be used to add a BibTeX entry to the site's publication list.
+  - type: input
+    id: title
+    attributes:
+      label: Paper Title
+      description: The exact title of the paper.
+    validations:
+      required: true
+  - type: textarea
+    id: authors
+    attributes:
+      label: Authors
+      description: Full names of all authors, in the order they appear on the paper, separated by commas.
+      placeholder: "Jane Doe, John Smith, Maria Silva"
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      description: The publication (or preprint) year.
+      placeholder: "2026"
+    validations:
+      required: true
+  - type: input
+    id: venue
+    attributes:
+      label: Venue
+      description: Where the paper was published, e.g. "arXiv", "ICSE 2026", "IEEE Transactions on Software Engineering".
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: URL to the paper (arXiv page, DOI, or publisher page).
+      placeholder: "https://arxiv.org/abs/XXXX.XXXXX"
+    validations:
+      required: true
+  - type: dropdown
+    id: related-to
+    attributes:
+      label: Related Case Study or Research Theme
+      description: Which case study or research theme(s) is this paper related to? Start typing to filter the list. You can select more than one.
+      multiple: true
+      options:
+        - "Case Study: Health"
+        - "Case Study: Education"
+        - "Case Study: Environmental Crisis Management"
+        - "Case Study: Justice"
+        - "Case Study: Carbon Credits"
+        - "Case Study: Robotics"
+        - "Theme: Requirements Analysis & Management — SE4AI"
+        - "Theme: Requirements Analysis & Management — AI4SE"
+        - "Theme: Project Management — SE4AI"
+        - "Theme: Project Management — AI4SE"
+        - "Theme: Configuration Management — SE4AI"
+        - "Theme: Configuration Management — AI4SE"
+        - "Theme: Testing & Code Review — SE4AI"
+        - "Theme: Testing & Code Review — AI4SE"
+        - "Theme: Verification — SE4AI"
+        - "Theme: Verification — AI4SE"
+        - "Theme: Design & Architecture — SE4AI"
+        - "Theme: Design & Architecture — AI4SE"
+        - "Theme: Implementation & Optimization — SE4AI"
+        - "Theme: Implementation & Optimization — AI4SE"
+        - "Theme: Maintenance & Evolution — SE4AI"
+        - "Theme: Maintenance & Evolution — AI4SE"
+        - "Theme: Evidence-Based Assessment — Transversal"
+        - "Not sure / none of the above"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else worth knowing, e.g. DOI, arXiv ID, or a preferred BibTeX key.
+    validations:
+      required: false
