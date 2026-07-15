@@ -2,6 +2,7 @@ members:
   # ── Coordinator ──────────────────────────────────────────────────────
   - name: "Augusto Sampaio"
     slug: "augusto-sampaio"
+    category: "Coordinator"
     role: "Coordinator"
     affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
     photo: "/img/team/augusto-sampaio.jpg"
@@ -10,6 +11,7 @@ members:
 
   - name: "Paulo Borba"
     slug: "paulo-borba"
+    category: "Coordinator"
     role: "Coordinator"
     affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
     photo: "/img/team/paulo-borba.jpg"
@@ -20,6 +22,7 @@ members:
 
   - name: "Sergio Soares"
     slug: "sergio-soares"
+    category: "Coordinator"
     role: "Coordinator"
     affiliation: "CIn-UFPE"
     photo: "/img/team/sergio-soares.jpg"
@@ -31,6 +34,7 @@ members:
   # ── Faculty ──────────────────────────────────────────────────────────
   - name: "Fernanda Madeiral"
     slug: "fernanda-madeiral"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
     photo: "/img/team/fernanda-madeiral.jpg"
@@ -41,6 +45,7 @@ members:
 
   - name: "Juliana Saraiva"
     slug: "juliana-saraiva"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal da Paraíba - UFPB"
     photo: "/img/team/juliana-saraiva.jpg"
@@ -50,6 +55,7 @@ members:
 
   - name: "Leonardo Murta"
     slug: "leonardo-murta"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal Fluminense - UFF"
     photo: "/img/team/leonardo-murta.jpg"
@@ -60,6 +66,7 @@ members:
 
   - name: "Leopoldo Teixeira"
     slug: "leopoldo-teixeira"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
     photo: "/img/team/leopoldo-teixeira.jpg"
@@ -70,6 +77,7 @@ members:
 
   - name: "Lincoln Rocha"
     slug: "lincoln-rocha"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal do Ceará - UFC"
     photo: "/img/team/lincoln-rocha.jpg"
@@ -79,6 +87,7 @@ members:
 
   - name: "Marcel Oliveira"
     slug: "marcel-oliveira"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal do Rio Grande do Norte - UFRN"
     bio: "Marcel Vinicius Medeiros Oliveira is a Full Professor at the Department of Informatics and Applied Mathematics (DIMAp) of the Federal University of Rio Grande do Norte (UFRN). He holds a B.Sc. in Computer Science from the Federal University of Pernambuco (2000), an M.Sc. in Computer Science from the Federal University of Pernambuco (2002), and a Ph.D. in Computer Science from the University of York, England (2006). He is currently a member of the National Institute for Software Engineering, a member of the Brazilian Computer Society's Special Committee on Formal Methods, a member of UFRN's Graduate Program in Systems and Computing (PPgSC) Collegiate, and Coordinator of Technical Courses at UFRN's Metrópole Digital Institute, serving around 2,000 students. At the Metrópole Digital Institute, he is a collaborating member, as well as a member of the Academic Development Committee, Deputy Director of Teaching, and Deputy Coordinator of SETE, the Institute's Center for Integration, Research, and Innovation in Software Engineering. Marcel Oliveira has experience in Computer Science with an emphasis on Formal Methods. More specifically, his research has focused on refinement calculus and tactics, concurrency, the semantics of formal languages, the integration of formal methods, and code synthesis from formal specifications."
@@ -88,6 +97,7 @@ members:
 
   - name: "Marco Tulio Valente"
     slug: "marco-tulio-valente"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Federal University of Minas Gerais - UFMG"
     photo: "/img/team/marco-tulio-valente.png"
@@ -98,6 +108,7 @@ members:
 
   - name: "Rodrigo Bonifácio"
     slug: "rodrigo-bonifacio"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
     photo: "/img/team/rodrigo-bonifacio.jpg"
@@ -108,6 +119,7 @@ members:
 
   - name: "Tiago Massoni"
     slug: "tiago-massoni"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Federal University of Campina Grande - UFCG"
     photo: "/img/team/tiago-massoni.jpg"
@@ -118,6 +130,7 @@ members:
 
   - name: "Vander Alves"
     slug: "vander-alves"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "University of Brasília - UnB"
     photo: "/img/team/vander-alves.jpg"
@@ -128,6 +141,7 @@ members:
 
   - name: "Vinicius Cardoso Garcia"
     slug: "vinicius-cardoso-garcia"
+    category: "Faculty"
     role: "Faculty"
     affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
     photo: "/img/team/vinicius-cardoso-garcia.png"
@@ -139,6 +153,7 @@ members:
   # ── Post-Doc Researchers ─────────────────────────────────────────────
   - name: "Heleno Campos"
     slug: "heleno-campos"
+    category: "Post-Doc Researcher"
     role: "Post-Doc Researcher"
     affiliation: "Universidade Federal Fluminense - UFF"
     bio: "Heleno de Souza Campos Junior (Heleno Campos) is currently a Postdoc at the Computing Institute of Universidade Federal Fluminense (UFF) under a PDJ CNPq Scholarship Grant. He holds a D.Sc. (2025) degree in Computing from Universidade Federal Fluminense (UFF). He also holds a M.Sc. (2018) degree in Computer Science (Software Engineering) from Universidade Federal de Juiz de Fora (UFJF), and a B.Sc. (2016) degree in Information Systems from IF Sudeste MG. He held a CAPES scholarship for a sandwich program during the B.Sc. in 2013/2014, where he attended the University of Pisa, Italy. He also held a CAPES scholarship during his Master's and Doctorate's. His research interests include software testing and configuration management."
@@ -148,6 +163,7 @@ members:
 
   - name: "Rafael Melo Macieira"
     slug: "rafael-melo-macieira"
+    category: "Post-Doc Researcher"
     role: "Post-Doc Researcher"
     affiliation: "International Centre for Neuromorphic Systems (ICSN) - Western Sydney University (WSU)"
     photo: "/img/team/rafael-melo-macieira.jpg"
@@ -156,9 +172,10 @@ members:
     lattes: "http://lattes.cnpq.br/0687987855270877"
     webpage: "https://www.westernsydney.edu.au/icns/about/people/research-assistants/rafael-macieira"
 
-  # ── PhD Students ─────────────────────────────────────────────────────
+  # ── Students (PhD, MSc, Undergraduate, ...) ──────────────────────────
   - name: "Fagner Dias"
     slug: "fagner-dias"
+    category: "Student"
     role: "PhD Student"
     affiliation: "Universidade Federal do Rio Grande do Norte - UFRN"
     photo: "/img/team/fagner-dias.jpg"
@@ -168,6 +185,7 @@ members:
 
   - name: "Paulo Rolim"
     slug: "paulo-rolim"
+    category: "Student"
     role: "PhD Student"
     affiliation: "Universidade Federal do Rio Grande do Norte - UFRN"
     photo: "/img/team/paulo-rolim.jpg"

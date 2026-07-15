@@ -697,11 +697,29 @@ section { padding: 80px 0; }
   border: none;
 }
 
+.team-card-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
 .team-card-name {
   font-size: 17px;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 4px;
+  margin-bottom: 0;
+}
+.team-card-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand);
+  background: var(--brand-light);
+  padding: 3px 9px;
+  border-radius: 100px;
+  white-space: nowrap;
 }
 .team-card-role {
   font-size: 13px;

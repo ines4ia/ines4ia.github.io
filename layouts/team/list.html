@@ -10,19 +10,21 @@
 
 <div class="page-body">
   <div class="container">
-    {{ $roleOrder := slice "Coordinator" "Faculty" "Post-Doc Researcher" "PhD Student" }}
-    {{ $roleHeadings := dict "Coordinator" "Coordinator" "Faculty" "Faculty" "Post-Doc Researcher" "Post-Doc Researchers" "PhD Student" "PhD Students" }}
+    {{ $categoryOrder := slice "Coordinator" "Faculty" "Post-Doc Researcher" "Student" }}
+    {{ $categoryHeadings := dict "Coordinator" "Coordinator" "Faculty" "Faculty" "Post-Doc Researcher" "Post-Doc Researchers" "Student" "Students" }}
     {{ $colors := slice "#6366f1" "#0891b2" "#c2410c" "#15803d" "#a21caf" "#b91c1c" }}
 
-    {{ range $roleOrder }}
-      {{ $role := . }}
-      {{ $group := where hugo.Data.team.members "role" $role }}
+    {{ range $categoryOrder }}
+      {{ $category := . }}
+      {{ $group := where hugo.Data.team.members "category" $category }}
       {{ if gt (len $group) 0 }}
-      <h2 class="team-role-heading">{{ index $roleHeadings $role }}</h2>
+      <h2 class="team-role-heading">{{ index $categoryHeadings $category }}</h2>
       <div class="team-page-grid">
         {{ range sort $group "name" }}
         {{ $member := . }}
         {{ $toggleID := printf "bio-%s" $member.slug }}
+        {{ $badge := "" }}
+        {{ if eq $category "Student" }}{{ $badge = strings.TrimSuffix " Student" $member.role }}{{ end }}
         <article class="team-card">
           {{ if $member.photo }}
           <img class="team-card-avatar" src="{{ $member.photo }}" alt="{{ $member.name }}">
@@ -32,7 +34,10 @@
           {{ $color := index $colors (mod (len $member.name) (len $colors)) }}
           <div class="team-card-avatar team-card-avatar-initials" style="background:{{ $color }}">{{ $initials }}</div>
           {{ end }}
-          <h3 class="team-card-name">{{ $member.name }}</h3>
+          <div class="team-card-heading">
+            <h3 class="team-card-name">{{ $member.name }}</h3>
+            {{ with $badge }}<span class="team-card-badge">{{ . }}</span>{{ end }}
+          </div>
           <p class="team-card-role">{{ $member.role }}{{ with $member.affiliation }} · {{ . }}{{ end }}</p>
           {{ with $member.bio }}
           {{ if gt (len .) 220 }}
