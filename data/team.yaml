@@ -183,6 +183,17 @@ members:
     lattes: "http://lattes.cnpq.br/7179984988211505"
     webpage: "https://helenocampos.github.io/"
 
+  - name: "Leuson Da Silva"
+    slug: "leuson-da-silva"
+    category: "Post-Doc Researcher"
+    role: "Post-Doc Researcher"
+    affiliation: "Polytechnique Montreal"
+    photo: "/img/team/leuson-da-silva.png"
+    bio: "Leuson Da Silva is a Postdoctoral Fellow at Polytechnique Montréal, Canada. He holds a Ph.D. and an M.Sc. in Computer Science from the Universidade Federal de Pernambuco (UFPE), Brazil, and a B.Sc. in Software Engineering from the Universidade Federal do Ceará (UFC), Brazil. During his bachelor's degree, he completed an international academic exchange at the Technical University of Munich (TUM), Germany (2013), and, during his Ph.D., he was a visiting researcher at Chalmers University of Technology, Sweden (2019). His research investigates methods and tools to support software developers in their daily activities and improve the quality and productivity of software development. His work has particularly focused on code integration conflicts, including build, test, and semantic conflicts, as well as software testing, code review, refactoring, and AI-assisted software engineering."
+    orcid: "https://orcid.org/0000-0002-9086-9038"
+    lattes: "http://lattes.cnpq.br/8681457281512244"
+    webpage: "https://leusonmario.github.io/"
+
   - name: "Rafael Melo Macieira"
     slug: "rafael-melo-macieira"
     category: "Post-Doc Researcher"
