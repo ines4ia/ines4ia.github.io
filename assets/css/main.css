@@ -641,6 +641,14 @@ section { padding: 80px 0; }
 .prose li { margin-bottom: 6px; }
 .prose a { color: var(--brand); }
 
+/* .prose is also reused inside .page-hero (dark bg) for section index
+   pages like About/Research/Results — override its light-theme tokens
+   so headings and body text stay readable there. */
+.page-hero .prose { color: var(--text-muted); }
+.page-hero .prose h2,
+.page-hero .prose h3 { color: var(--text); }
+.page-hero .prose a { color: var(--text); text-decoration: underline; }
+
 /* ─── News list (inner page) ─────────────────────────────────────────── */
 .news-list-grid {
   display: grid;
