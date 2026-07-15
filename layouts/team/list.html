@@ -1,0 +1,60 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    {{ with .Params.label }}<p class="section-label">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="prose" style="margin-top:16px">{{ . }}</div>{{ end }}
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container">
+    {{ $roleOrder := slice "Coordinator" "Faculty" "Post-Doc Researcher" "PhD Student" }}
+    {{ $roleHeadings := dict "Coordinator" "Coordinator" "Faculty" "Faculty" "Post-Doc Researcher" "Post-Doc Researchers" "PhD Student" "PhD Students" }}
+    {{ $colors := slice "#6366f1" "#0891b2" "#c2410c" "#15803d" "#a21caf" "#b91c1c" }}
+
+    {{ range $roleOrder }}
+      {{ $role := . }}
+      {{ $group := where hugo.Data.team.members "role" $role }}
+      {{ if gt (len $group) 0 }}
+      <h2 class="team-role-heading">{{ index $roleHeadings $role }}</h2>
+      <div class="team-page-grid">
+        {{ range sort $group "name" }}
+        {{ $member := . }}
+        {{ $toggleID := printf "bio-%s" $member.slug }}
+        <article class="team-card">
+          {{ if $member.photo }}
+          <img class="team-card-avatar" src="{{ $member.photo }}" alt="{{ $member.name }}">
+          {{ else }}
+          {{ $parts := split $member.name " " }}
+          {{ $initials := printf "%s%s" (substr (index $parts 0) 0 1) (substr (index $parts (sub (len $parts) 1)) 0 1) }}
+          {{ $color := index $colors (mod (len $member.name) (len $colors)) }}
+          <div class="team-card-avatar team-card-avatar-initials" style="background:{{ $color }}">{{ $initials }}</div>
+          {{ end }}
+          <h3 class="team-card-name">{{ $member.name }}</h3>
+          <p class="team-card-role">{{ $member.role }}{{ with $member.affiliation }} · {{ . }}{{ end }}</p>
+          {{ with $member.bio }}
+          {{ if gt (len .) 220 }}
+          <input type="checkbox" id="{{ $toggleID }}" class="team-card-toggle">
+          <p class="team-card-bio">{{ . }}</p>
+          <label for="{{ $toggleID }}" class="team-card-more"></label>
+          {{ else }}
+          <p class="team-card-bio">{{ . }}</p>
+          {{ end }}
+          {{ end }}
+          {{ if or $member.orcid $member.lattes $member.webpage }}
+          <p class="team-card-links">
+            {{ with $member.orcid }}<a href="{{ . }}" target="_blank" rel="noopener">ORCID</a>{{ end }}
+            {{ with $member.lattes }}<a href="{{ . }}" target="_blank" rel="noopener">Lattes</a>{{ end }}
+            {{ with $member.webpage }}<a href="{{ . }}" target="_blank" rel="noopener">Website</a>{{ end }}
+          </p>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
