@@ -1,0 +1,21 @@
+publications:
+  - title: "Contrastive Meta-Domain Adaptation for Robust Skin Lesion Classification Across Clinical and Acquisition Conditions"
+    authors: "Rodrigo Mota, Kelvin Cunha, Emanoel dos Santos, Fábio Papais, Francisco Filho, Thales Bezerra, Erico Medeiros, Paulo Borba, Tsang Ing Ren"
+    venue: "arXiv"
+    year: 2026
+    domain: "Health"
+    link: "https://arxiv.org/abs/2602.19857"
+
+  - title: "DerMAE: Improving Skin Lesion Classification through Conditioned Latent Diffusion and MAE Distillation"
+    authors: "Francisco Filho, Kelvin Cunha, Fábio Papais, Emanoel dos Santos, Rodrigo Mota, Thales Bezerra, Erico Medeiros, Paulo Borba, Tsang Ing Ren"
+    venue: "arXiv"
+    year: 2026
+    domain: "Health"
+    link: "https://arxiv.org/abs/2602.19848"
+
+  - title: "DermAI: Clinical Dermatology Acquisition through Quality-Driven Image Collection for AI Classification in Mobile"
+    authors: "Thales Bezerra, Emanoel Thyago, Kelvin Cunha, Rodrigo Abreu, Fábio Papais, Francisco Mauro, Natália Lopes, Érico Medeiros, Jéssica Guido, Shirley Cruz, Paulo Borba, Tsang Ing Ren"
+    venue: "arXiv"
+    year: 2025
+    domain: "Health"
+    link: "https://arxiv.org/abs/2511.10367"

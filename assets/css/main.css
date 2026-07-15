@@ -867,6 +867,49 @@ section { padding: 80px 0; }
   line-height: 1.65;
   color: var(--text-dark-muted);
 }
+.case-study-pub-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand);
+}
+.case-study-pub-link:hover { color: var(--brand-dark); }
+
+/* ─── Publications list (inner page) ─────────────────────────────────── */
+.pub-domain-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+
+.pub-list { margin-bottom: 40px; }
+.pub-card {
+  background: var(--light-card);
+  border: 1px solid var(--light-border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+.pub-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.pub-title a { color: var(--text-dark); }
+.pub-title a:hover { color: var(--brand); }
+.pub-authors {
+  font-size: 14px;
+  color: var(--text-dark-muted);
+  margin-bottom: 6px;
+}
+.pub-venue {
+  font-size: 13px;
+  color: var(--text-dark-muted);
+  font-style: italic;
+}
 
 /* ─── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {

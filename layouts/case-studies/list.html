@@ -10,12 +10,16 @@
 
 <div class="page-body">
   <div class="container">
+    {{ $pubs := (index hugo.Data "publications").publications }}
     <div class="case-study-grid">
       {{ range (index hugo.Data "case-studies").studies }}
       <article class="case-study-card">
         <span class="case-study-domain">{{ .domain }}</span>
         <h2 class="case-study-title">{{ .title }}</h2>
         <p class="case-study-desc">{{ .description }}</p>
+        {{ if gt (len (where $pubs "domain" .domain)) 0 }}
+        <a class="case-study-pub-link" href="/results/#{{ .domain | urlize }}">Related publications →</a>
+        {{ end }}
       </article>
       {{ end }}
     </div>

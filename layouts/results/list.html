@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    {{ with .Params.label }}<p class="section-label">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="prose" style="margin-top:16px">{{ . }}</div>{{ end }}
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container">
+    {{ $pubs := (index hugo.Data "publications").publications }}
+    {{ $domainOrder := slice "Health" "Education" "Environmental Crisis Management" "Justice" "Carbon Credits" "Robotics" }}
+
+    {{ range $domainOrder }}
+      {{ $domain := . }}
+      {{ $group := sort (where $pubs "domain" $domain) "year" "desc" }}
+      {{ if gt (len $group) 0 }}
+      <h2 id="{{ $domain | urlize }}" class="pub-domain-title">{{ $domain }}</h2>
+      <div class="pub-list">
+        {{ range $group }}
+        <article class="pub-card">
+          <h3 class="pub-title"><a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a></h3>
+          <p class="pub-authors">{{ .authors }}</p>
+          <p class="pub-venue">{{ .venue }} · {{ .year }}</p>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
