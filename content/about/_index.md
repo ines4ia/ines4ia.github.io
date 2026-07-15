@@ -1,13 +1,9 @@
 ---
 title: "About Us"
-description: "INES.IA is a Brazilian national research institute (INCT) funded by CNPq, dedicated to advancing Software Engineering and Artificial Intelligence."
+description: "INES.IA — the Brazilian Institute for Software Engineering and Artificial Intelligence — is a National Institute for Science and Technology (INCT) funded by CNPq, the Brazilian National Council for Scientific and Technological Development, dedicated to advancing Software Engineering and Artificial Intelligence."
 label: "Institute"
 hideDate: true
 ---
-
-## What is INES.IA?
-
-INES.IA — the Brazilian Institute for Software Engineering and Artificial Intelligence — is a National Institute for Science and Technology (INCT) funded by CNPq, the Brazilian National Council for Scientific and Technological Development.
 
 ## Mission
 
