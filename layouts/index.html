@@ -99,7 +99,7 @@
   <div class="container">
     <h2>Meet the Team</h2>
     <div class="team-grid">
-      {{ range hugo.Data.team.members }}
+      {{ range sort (where hugo.Data.team.members "category" "Coordinator") "name" }}
       <div class="team-member">
         <img class="team-avatar" src="{{ .photo }}" alt="{{ .name }}">
         <p class="team-name">{{ .name }}</p>
@@ -107,7 +107,7 @@
       </div>
       {{ end }}
     </div>
-    <a class="btn btn-outline" href="/team/">See our team</a>
+    <a class="btn btn-outline" href="/team/">See the full team</a>
   </div>
 </section>
 
