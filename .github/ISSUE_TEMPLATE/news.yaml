@@ -1,0 +1,69 @@
+name: New News Item
+description: Submit a news item, event, or announcement to be published on the INES.IA website.
+title: "[News]: "
+labels: ["enhancement", "news"]
+assignees:
+  - rbonifacio
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in the details below. This will be used to create a new post on the site's News page.
+  - type: input
+    id: title
+    attributes:
+      label: Headline
+      description: The news item's title, as it should appear on the site.
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Publication date for the news item.
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: dropdown
+    id: tag
+    attributes:
+      label: Category
+      description: Which category best describes this news item?
+      options:
+        - Announcement
+        - Event
+        - Partnership
+        - Award
+        - Publication
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A short 1-2 sentence summary, shown in the news card preview and homepage listing.
+    validations:
+      required: true
+  - type: textarea
+    id: body
+    attributes:
+      label: Full Story
+      description: The full text of the news item. Markdown is supported (bold, links, lists, etc.).
+    validations:
+      required: true
+  - type: input
+    id: image
+    attributes:
+      label: Image
+      description: Link to an image to use for the news card (optional).
+      placeholder: "https://..."
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else worth knowing.
+    validations:
+      required: false
