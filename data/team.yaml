@@ -43,6 +43,17 @@ members:
     lattes: "http://lattes.cnpq.br/8246690925340020"
     webpage: "https://fermadeiral.github.io"
 
+  - name: "Gustavo Pinto"
+    slug: "gustavo-pinto"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade Federal do Pará - UFPA"
+    photo: "/img/team/gustavo-pinto.jpg"
+    bio: "Gustavo Pinto is an Assistant Professor at the Federal University of Pará (UFPA), Brazil, and a Staff Engineer at iFood. He holds a PhD in Software Engineering from the Informatics Center at the Federal University of Pernambuco (UFPE), Brazil. His interests span Open Source Software, Human Aspects of Software Engineering, and Empirical Software Engineering, with current work focusing on machine learning and LLMs applied to software engineering. He has published over 100 research papers, some in the most important venues in his field (e.g., ICSE, ASE, CSCW, TSE, CACM), accumulating 5,200+ citations (h-index: 40). He won several international research and service awards, including the MSR Ric Holt Early Career Achievement Award, in 2022, one ACM SIGSOFT Distinguished Paper award in ICSE 2021, and one JSS Paper of the Year in 2019."
+    orcid: "https://orcid.org/0000-0001-7598-2799"
+    lattes: "http://lattes.cnpq.br/1631238943341152"
+    webpage: "https://www.gustavopinto.org"
+
   - name: "Juliana Saraiva"
     slug: "juliana-saraiva"
     category: "Faculty"
