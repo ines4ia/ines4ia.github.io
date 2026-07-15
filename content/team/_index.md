@@ -1,6 +1,6 @@
 ---
 title: "Team"
-description: "Meet the researchers of INES.IA — faculty, post-doc researchers, and PhD students advancing Software Engineering and Artificial Intelligence."
+description: "Meet the researchers of INES.IA — faculty, post-doc researchers, and students advancing Software Engineering and Artificial Intelligence."
 label: "People"
 hideDate: true
 ---
