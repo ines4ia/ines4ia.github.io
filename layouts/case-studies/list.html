@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    {{ with .Params.label }}<p class="section-label">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="prose" style="margin-top:16px">{{ . }}</div>{{ end }}
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container">
+    <div class="case-study-grid">
+      {{ range (index hugo.Data "case-studies").studies }}
+      <article class="case-study-card">
+        <span class="case-study-domain">{{ .domain }}</span>
+        <h2 class="case-study-title">{{ .title }}</h2>
+        <p class="case-study-desc">{{ .description }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

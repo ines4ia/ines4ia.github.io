@@ -789,6 +789,85 @@ section { padding: 80px 0; }
 .team-card-links a { color: var(--brand); }
 .team-card-links a:hover { color: var(--brand-dark); }
 
+/* ─── Research Themes list (inner page) ──────────────────────────────── */
+.theme-discipline { margin-bottom: 40px; }
+.theme-discipline-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+.theme-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.theme-pair--single { grid-template-columns: 1fr; }
+
+.theme-card {
+  background: var(--light-card);
+  border: 1px solid var(--light-border);
+  border-left: 4px solid var(--brand);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+.theme-card--ai4se { border-left-color: #0891b2; }
+.theme-card--transversal { border-left-color: #c2410c; }
+
+.theme-card-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+.theme-card--ai4se .theme-card-tag { color: #0891b2; }
+.theme-card--transversal .theme-card-tag { color: #c2410c; }
+
+.theme-card-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-dark-muted);
+}
+
+/* ─── Case Studies list (inner page) ─────────────────────────────────── */
+.case-study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.case-study-card {
+  background: var(--light-card);
+  border: 1px solid var(--light-border);
+  border-radius: 12px;
+  padding: 24px;
+}
+.case-study-domain {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--brand);
+  padding: 4px 10px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+.case-study-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+.case-study-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-dark-muted);
+}
+
 /* ─── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .figures-grid { grid-template-columns: repeat(2, 1fr); }
@@ -796,6 +875,8 @@ section { padding: 80px 0; }
   .news-grid { grid-template-columns: repeat(2, 1fr); }
   .news-list-grid { grid-template-columns: repeat(2, 1fr); }
   .team-page-grid { grid-template-columns: repeat(2, 1fr); }
+  .theme-pair { grid-template-columns: 1fr; }
+  .case-study-grid { grid-template-columns: 1fr; }
   .research-banner-text { padding: 48px 40px; }
   .about-inner { grid-template-columns: 1fr 1fr; }
   .about-content { padding: 64px 48px; }

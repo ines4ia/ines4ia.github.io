@@ -1,0 +1,30 @@
+studies:
+  - slug: "health"
+    domain: "Health"
+    title: "AI-Assisted Skin Lesion Detection"
+    description: "An application for detecting melanoma and other skin lesions, tuned to the diversity of the Brazilian population, using learning models optimized to run on mobile phones to protect patient privacy."
+
+  - slug: "education"
+    domain: "Education"
+    title: "AI and Software Product Lines for Learning"
+    description: "An AI application for education that explores reuse and software product-line techniques to more easily scale content across different contexts, audiences, and subjects."
+
+  - slug: "environmental-crisis-management"
+    domain: "Environmental Crisis Management"
+    title: "Monitoring and Response to Urban Flooding"
+    description: "Solutions to support monitoring, proactive planning, and response to natural disasters, with an initial focus on urban flooding, developed in partnership with IPECTI-FACEPE."
+
+  - slug: "justice"
+    domain: "Justice"
+    title: "Process Mining for the Judicial System"
+    description: "Enhancing the JuMP tool with machine learning models to identify inefficiencies, predict patterns, analyze compliance, detect bottlenecks, and recommend interventions across judicial workflows, in partnership with the National Council of Justice (CNJ)."
+
+  - slug: "carbon-credits"
+    domain: "Carbon Credits"
+    title: "Blockchain-Based Carbon Credit Trading"
+    description: "An AI-based solution for trading carbon credits on the blockchain, using AI to turn natural-language requirements into smart contracts that automate tracking, verification, and transfer registration."
+
+  - slug: "robotics"
+    domain: "Robotics"
+    title: "Formal Methods and Generative AI for Robotics"
+    description: "Modeling, simulating, verifying, and implementing robotic applications using AI techniques combined with formal methods, advancing software engineering processes for robotic systems."

@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="page-hero">
+  <div class="container">
+    {{ with .Params.label }}<p class="section-label">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="prose" style="margin-top:16px">{{ . }}</div>{{ end }}
+  </div>
+</div>
+
+<div class="page-body">
+  <div class="container">
+    {{ $themes := (index hugo.Data "research-themes").themes }}
+    {{ $disciplines := slice "Requirements Analysis & Management" "Project Management" "Configuration Management" "Testing & Code Review" "Verification" "Design & Architecture" "Implementation & Optimization" "Maintenance & Evolution" }}
+    {{ $perspectiveOrder := slice "SE4AI" "AI4SE" }}
+
+    {{ range $disciplines }}
+      {{ $discipline := . }}
+      {{ $byDiscipline := where $themes "discipline" $discipline }}
+      <div class="theme-discipline">
+        <h2 class="theme-discipline-title">{{ $discipline }}</h2>
+        <div class="theme-pair">
+          {{ range $perspectiveOrder }}
+            {{ range where $byDiscipline "perspective" . }}
+            <div class="theme-card theme-card--{{ .perspective | lower }}">
+              <span class="theme-card-tag">{{ .perspective }}</span>
+              <p class="theme-card-desc">{{ .description }}</p>
+            </div>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ range where $themes "perspective" "Transversal" }}
+    <div class="theme-discipline">
+      <h2 class="theme-discipline-title">{{ .discipline }}</h2>
+      <div class="theme-pair theme-pair--single">
+        <div class="theme-card theme-card--transversal">
+          <span class="theme-card-tag">Transversal</span>
+          <p class="theme-card-desc">{{ .description }}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

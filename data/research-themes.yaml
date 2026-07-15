@@ -1,0 +1,94 @@
+themes:
+  # ── Requirements Analysis & Management ──────────────────────────────
+  - slug: "requirements-se4ai"
+    discipline: "Requirements Analysis & Management"
+    perspective: "SE4AI"
+    description: "Adapting and evaluating software engineering and HCI techniques for eliciting, analyzing, and managing requirements of AI-based systems, with a focus on explainability, transparency, robustness, and efficiency."
+
+  - slug: "requirements-ai4se"
+    discipline: "Requirements Analysis & Management"
+    perspective: "AI4SE"
+    description: "Using AI to automate requirements elicitation, analysis, and management for AI-based systems, including automatic specification capture and detection of ambiguities, duplications, and quality patterns."
+
+  # ── Project Management ───────────────────────────────────────────────
+  - slug: "project-management-se4ai"
+    discipline: "Project Management"
+    perspective: "SE4AI"
+    description: "Adapting and evaluating techniques and tools to manage AI-based system development projects, focusing on integration and communication between AI-model teams and the teams that embed those models into the wider system."
+
+  - slug: "project-management-ai4se"
+    discipline: "Project Management"
+    perspective: "AI4SE"
+    description: "Using AI models to improve project management for AI-based systems, covering activity estimation, performance monitoring, team communication, and developer well-being."
+
+  # ── Configuration Management ─────────────────────────────────────────
+  - slug: "configuration-management-se4ai"
+    discipline: "Configuration Management"
+    perspective: "SE4AI"
+    description: "Investigating and evaluating tools to manage AI and machine learning pipelines, focusing on versioning and the integration of code, data, and models."
+
+  - slug: "configuration-management-ai4se"
+    discipline: "Configuration Management"
+    perspective: "AI4SE"
+    description: "Applying AI to improve configuration management tasks such as code merging and parameter organization, helping detect and resolve syntactic and semantic integration conflicts."
+
+  # ── Testing & Code Review ────────────────────────────────────────────
+  - slug: "testing-code-review-se4ai"
+    discipline: "Testing & Code Review"
+    perspective: "SE4AI"
+    description: "Developing and evaluating techniques and tools for testing and reviewing code in AI-based systems, including both traditional code and ML pipelines, to ensure robustness and reliability."
+
+  - slug: "testing-code-review-ai4se"
+    discipline: "Testing & Code Review"
+    perspective: "AI4SE"
+    description: "Investigating how AI can improve testing and code review tools and practices, focusing on better error detection and quality assurance for large-scale software development."
+
+  # ── Verification ──────────────────────────────────────────────────────
+  - slug: "verification-se4ai"
+    discipline: "Verification"
+    perspective: "SE4AI"
+    description: "Creating formal verification techniques for AI-based systems to ensure robustness, security, and consistency, with rigorous solutions for validating critical operational properties."
+
+  - slug: "verification-ai4se"
+    discipline: "Verification"
+    perspective: "AI4SE"
+    description: "Using AI to improve runtime verification tools and to generate formal specifications from requirements, evaluated through empirical studies in highly complex scenarios."
+
+  # ── Design & Architecture ────────────────────────────────────────────
+  - slug: "design-architecture-se4ai"
+    discipline: "Design & Architecture"
+    perspective: "SE4AI"
+    description: "Investigating design patterns for AI-based systems, including automatic pattern detection in open-source projects and code refactoring mechanisms, to support sustainable software architectures."
+
+  - slug: "design-architecture-ai4se"
+    discipline: "Design & Architecture"
+    perspective: "AI4SE"
+    description: "Using classical and generative AI to create and evolve AI-system architectures, including automated recording of architectural decisions and refactoring monoliths into microservices with LLM support."
+
+  # ── Implementation & Optimization ────────────────────────────────────
+  - slug: "implementation-optimization-se4ai"
+    discipline: "Implementation & Optimization"
+    perspective: "SE4AI"
+    description: "Developing techniques and tools to support the implementation and optimization of AI-based systems, focusing on maintainability, scalability, and integration into legacy and critical software."
+
+  - slug: "implementation-optimization-ai4se"
+    discipline: "Implementation & Optimization"
+    perspective: "AI4SE"
+    description: "Studying how machine learning infrastructure choices affect energy consumption, and developing techniques to optimize that consumption while preserving model accuracy."
+
+  # ── Maintenance & Evolution ──────────────────────────────────────────
+  - slug: "maintenance-evolution-se4ai"
+    discipline: "Maintenance & Evolution"
+    perspective: "SE4AI"
+    description: "Developing and applying maintenance and evolution techniques to identify, monitor, and address hidden technical debt in AI-based systems."
+
+  - slug: "maintenance-evolution-ai4se"
+    discipline: "Maintenance & Evolution"
+    perspective: "AI4SE"
+    description: "Using machine learning and large language models to recommend architectural and design changes as functional and non-functional requirements evolve."
+
+  # ── Transversal ───────────────────────────────────────────────────────
+  - slug: "evidence-based-assessment"
+    discipline: "Evidence-Based Assessment"
+    perspective: "Transversal"
+    description: "Developing tools and methodologies for systematic empirical studies — reviews, experiments, quantitative and qualitative research — that generate evidence for the usefulness and effectiveness of every technique proposed across the institute, guided by Open Science principles."
