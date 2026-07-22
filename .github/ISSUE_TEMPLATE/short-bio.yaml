@@ -24,6 +24,7 @@ body:
       options:
         - Faculty
         - Post-Doc Researcher
+        - Research Contributor
         - PhD Student
         - Masters Student
         - Undergraduate Student
