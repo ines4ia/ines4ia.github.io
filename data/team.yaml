@@ -138,6 +138,17 @@ members:
     lattes: "http://lattes.cnpq.br/1756952696097255"
     webpage: "https://sites.dimap.ufrn.br/~marcel/"
 
+  - name: "Márcio Ribeiro"
+    slug: "marcio-ribeiro"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Computing Institute - Federal University of Alagoas"
+    photo: "/img/team/marcio-ribeiro.png"
+    bio: "Márcio Ribeiro is an Associate Professor at the Computing Institute of the Federal University of Alagoas (UFAL). He holds a PhD in Computer Science from the Federal University of Pernambuco (2012). His Doctoral Thesis received the ACM John Vlissides Award, making Márcio the first Latin American to receive such an award. The award was granted at OOPSLA, one of the world's most important conferences in the field of programming languages. His Doctoral Thesis was also considered the best in Brazil in Computer Science for 2012, an award granted at the Thesis and Dissertation Contest (CTD) of the Congress of the Brazilian Computer Society (CSBC 2013). He has experience in the areas of Software Engineering and Artificial Intelligence, working mainly in Empirical Software Engineering, Software Testing, SE4AI, AI4SE, and applications of Artificial Intelligence in general. He was the General Chair of the Brazilian Congress on Software (CBSoft 2014). He was the Chair of the Program Committee of the Brazilian Symposium on Software Components, Architectures, and Reuse (SBCARS 2017). In 2021, he was Chair of the Program Committee of the Brazilian Symposium on Software Engineering (SBES 2021). In 2024, he was Chair of the Program Committee of the Brazilian Symposium on Systematic and Automated Software Testing (SAST 2024). He was President of the Special Committee on Software Engineering (CEES) of the Brazilian Computer Society (SBC), 2021-2022 term. In 2022 and 2025, he was a Member of the Quadrennial Evaluation Committee, in the Academic category, of the Computer Science area, of the Coordination for the Improvement of Higher Education Personnel (CAPES). He was a Special Speaker at SBQS 2016, Keynote Speaker at SBQS 2024, and Keynote Speaker at SAST 2025. He is the creator of the Aglomerações app, used during the COVID-19 pandemic with thousands of downloads, used throughout Brazil and by authorities in combating the virus. Márcio is the General Coordinator of the Research Center on Engineering and Systems (EASY) at UFAL (https://easy.ufal.br/), which carries out projects with public agencies and industry. One of EASY's projects is the Residency in Systems and AI, coordinated by Márcio, in partnership with the Federal Justice in Alagoas (JFAL) and the Federal Regional Court of the 5th Region (TRF5). The results indicate savings of more than 30 million reais for public coffers and more than 300,000 hours saved for Brazil's judiciary staff. Another EASY project coordinated by Márcio is the PopRua Platform, in partnership with the National Council of Justice (CNJ), a national software to support the generation of documents for people in homeless situations. EASY is also responsible for the Alagoas Telehealth Center (Ministry of Health), which aims to reduce infant and maternal mortality through the identification (via AI) of high-risk pregnant women."
+    orcid: "https://orcid.org/0000-0002-4293-4261"
+    lattes: "http://lattes.cnpq.br/9300936571715992"
+    webpage: "http://ic.ufal.br/marcio"
+
   - name: "Marco Tulio Valente"
     slug: "marco-tulio-valente"
     category: "Faculty"
