@@ -54,6 +54,16 @@ members:
     lattes: "http://lattes.cnpq.br/8246690925340020"
     webpage: "https://fermadeiral.github.io"
 
+  - name: "Fernando Castor"
+    slug: "fernando-castor"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "University of Twente"
+    bio: "Fernando Castor is an Associate Professor at the University of Twente, The Netherlands. His broad research goal is to help developers build more efficient software systems more efficiently. That usually involves helping them making better design and implementation decisions when performing development and maintenance tasks. More specifically, he conducts research in the areas of Green Software Development, Code Understandability, and Error Handling."
+    orcid: "https://orcid.org/0000-0002-6389-3630"
+    lattes: "http://lattes.cnpq.br/7310046838140771"
+    webpage: "https://fernandocastor.github.io"
+
   - name: "Gustavo Pinto"
     slug: "gustavo-pinto"
     category: "Faculty"
@@ -149,6 +159,16 @@ members:
     orcid: "https://orcid.org/0000-0003-0866-658X"
     lattes: "http://lattes.cnpq.br/0669244312752630"
     webpage: "https://pedrogarcia.gitlab.io/"
+
+  - name: "Ricardo Massa"
+    slug: "ricardo-massa"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "UFPE"
+    bio: "Ricardo Massa é Professor Titular no Centro de Informática da UFPE (CIn/UFPE), onde concluiu o Doutorado em Ciência da Computação, em 2000. Realizou pós-doutorado na Chalmers University of Technology na Suécia, em 2001. Atualmente, é Vice-Diretor do CIn/UFPE e coordenador do Laboratório V-Lab, que conta com mais de 100 pesquisadores. É autor de inúmeros artigos nas áreas de Mineração de Processos de Negócio, Avaliação de Desempenho de Sistemas Dinâmicos de Eventos Discretos e Construção e Otimização de Compiladores. Orientou mais de 40 alunos de doutorado e mestrado. Atualmente, seu interesse de pesquisa tem foco na área de Mineração de Processos de Negócio. Em parceria com o Conselho Nacional de Justiça (CNJ), coordena o projeto que desenvolveu a ferramenta de Mineração de Processos do Judiciário Brasileiro (JuMP). Leciona disciplinas de mineração de processos, introdução à programação e avaliação de desempenho de sistemas na graduação e pós-graduação."
+    orcid: "https://orcid.org/0000-0002-4045-5515"
+    lattes: "http://lattes.cnpq.br/0033981436042117"
+    webpage: "https://www.cin.ufpe.br/~rmfl"
 
   - name: "Rodrigo Bonifácio"
     slug: "rodrigo-bonifacio"
