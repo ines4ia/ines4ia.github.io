@@ -226,6 +226,16 @@ members:
     webpage: "https://viniciusgarcia.me"
 
   # ── Post-Doc Researchers ─────────────────────────────────────────────
+  - name: "Érico Medeiros"
+    slug: "erico-medeiros"
+    category: "Post-Doc Researcher"
+    role: "Research Contributor"
+    affiliation: "Centro de Inovação em Robótica e Inteligência Artificial Responsável - CRIAR"
+    photo: "/img/team/erico-medeiros.png"
+    bio: "Érico Medeiros is a Project Manager at CRIAR (CIn-UFPE), where he leads Research, Development, and Innovation (RD&I) initiatives focused on applying Artificial Intelligence and Robotics in real-world contexts. With solid experience in tech project management and agile methodologies, he leads multidisciplinary teams in delivering solutions that integrate AI, mobile applications, and intelligent systems. His work includes projects involving Large Language Models (LLMs), on-device AI execution, and applications in fields such as healthcare and automation, alongside his involvement in research initiatives that strengthen the technical and scientific foundation of the solutions developed."
+    orcid: "https://orcid.org/0009-0009-9334-7487"
+    lattes: "http://lattes.cnpq.br/9526364512649147"
+
   - name: "Heleno Campos"
     slug: "heleno-campos"
     category: "Post-Doc Researcher"
