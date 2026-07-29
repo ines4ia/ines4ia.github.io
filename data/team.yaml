@@ -325,6 +325,7 @@ members:
     category: "Student"
     role: "MSc Student"
     affiliation: "Universidade de Brasília - UnB"
+    photo: "/img/team/murillo-carvalho.png"
     bio: "Murillo Edson de Carvalho Souza is a federal public servant at Brazil's National Water and Basic Sanitation Agency (ANA), and he is also a Professor of Computer Science, Software Engineering, and Artificial Intelligence at IDP, IESB, and UniCEUB. He is currently a Master's student in Computer Science at the University of Brasília (UnB). With over 25 years of experience in information technology, his professional and academic trajectory encompasses software engineering, project management, artificial intelligence, and digital transformation in the public sector. His current research focuses on generative AI and large language models applied to software documentation, code comprehension, legacy system modernization, and software evolution."
     orcid: "https://orcid.org/0000-0002-3827-1952"
     lattes: "http://lattes.cnpq.br/6892771602850311"
