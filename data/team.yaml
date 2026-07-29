@@ -171,6 +171,17 @@ members:
     lattes: "http://lattes.cnpq.br/2147157840592913"
     webpage: "https://homepages.dcc.ufmg.br/~mtov/"
 
+  - name: "Nélio Cacho"
+    slug: "nelio-cacho"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Federal University of Rio Grande do Norte - UFRN"
+    photo: "/img/team/nelio-cacho.jpg"
+    bio: "Full Professor at the Federal University of Rio Grande do Norte (UFRN), Brazil, since 2009, with extensive experience in academic leadership and the coordination of Research, Development, and Innovation (R&D&I) projects. He served as Head of the Graduate Program in Systems and Computing (PPGSC/UFRN) from 2022 to 2024 and as Chair of the Department of Informatics and Applied Mathematics (DIMAp) from 2014 to 2017. He received his B.Sc. in Computer Science (2004) and M.Sc. in Systems and Computing (2006) from UFRN, and his Ph.D. in Computer Science from Lancaster University, United Kingdom (2005-2008), where he was a scholarship recipient in the School of Computing and Communications. He also completed a postdoctoral fellowship at Newcastle University, United Kingdom (2017-2018), funded by CAPES. He has extensive experience leading collaborative R&D projects with both public and private sector organizations, including the SmartMetropolis project, which focuses on the development of Smart City solutions. His research interests include Software Engineering and Distributed Systems, with emphasis on Agentic AI Frameworks, design patterns for Agentic AI, and non-functional requirements for Agentic AI systems. He actively serves on Program Committees and Organizing Committees of national and international conferences and has received several prestigious awards, including Best Paper Award, Best Research Award, and Distinguished Ph.D. Thesis Award."
+    orcid: "https://orcid.org/0000-0002-4706-5616"
+    lattes: "http://lattes.cnpq.br/4635320220484649"
+    webpage: "https://neliocacho.dimap.ufrn.br/"
+
   - name: "Pedro Garcia Freitas"
     slug: "pedro-garcia-freitas"
     category: "Faculty"
