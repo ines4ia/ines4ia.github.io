@@ -46,8 +46,8 @@ languageCode = "en-us"
   url = "/news/"
   weight = 6
 
-[[menus.main]]
-  identifier = "events"
-  name = "Events"
-  url = "/events/"
-  weight = 7
+#[[menus.main]]
+#  identifier = "events"
+#  name = "Events"
+#  url = "/events/"
+#  weight = 7
