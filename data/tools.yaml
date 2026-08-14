@@ -15,3 +15,10 @@ tools:
     repoLink: "https://github.com/ppgi-2025-cobol/preliminary-work"
     relatedType: "theme"
     relatedSlug: "maintenance-evolution-ai4se"
+
+  - key: "sigame"
+    name: "SIGAME - Sistema Inteligente de Geração Automatizada de Materiais Educacionais"
+    description: "SIGAME turns recorded lectures, audio, and slides into structured teaching materials that are ready to distribute. Unlike general-purpose AI tools, it doesn't invent content: it faithfully extracts what was actually taught in class, strips out the informalities of spoken language, and organizes the text into a document synchronized with the slides presented. Instructors get quality supporting material without adding to their workload, and students can generate supplementary material straight from recorded classes."
+    repoLink: "https://sigame.space/"
+    relatedType: "case-study"
+    relatedSlug: "education"

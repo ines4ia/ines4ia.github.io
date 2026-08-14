@@ -2,5 +2,5 @@
   <span class="team-card-badge tool-badge">Tool</span>
   <h3 class="pub-title">{{ .name }}</h3>
   <p class="pub-authors">{{ .description }}</p>
-  {{ with .repoLink }}<p class="pub-venue"><a href="{{ . }}" target="_blank" rel="noopener">View repository →</a></p>{{ end }}
+  {{ with .repoLink }}<p class="pub-venue"><a href="{{ . }}" target="_blank" rel="noopener">{{ if in . "github.com" }}View repository{{ else }}Visit website{{ end }} →</a></p>{{ end }}
 </article>
