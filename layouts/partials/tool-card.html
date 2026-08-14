@@ -1,0 +1,6 @@
+<article class="pub-card tool-card" id="{{ .key }}">
+  <span class="team-card-badge tool-badge">Tool</span>
+  <h3 class="pub-title">{{ .name }}</h3>
+  <p class="pub-authors">{{ .description }}</p>
+  {{ with .repoLink }}<p class="pub-venue"><a href="{{ . }}" target="_blank" rel="noopener">View repository →</a></p>{{ end }}
+</article>

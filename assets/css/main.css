@@ -950,6 +950,37 @@ section { padding: 80px 0; }
   margin-top: 10px;
 }
 
+/* ─── Tool card (Results page achievements) ──────────────────────────── */
+.tool-card { border-left: 3px solid #0891b2; }
+.tool-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #0891b2;
+  background: rgba(8,145,178,0.10);
+}
+
+/* ─── Results page section/year headings ─────────────────────────────── */
+.results-section-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 56px 0 24px;
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+.results-section-title:first-child { margin-top: 0; }
+.results-empty {
+  color: var(--text-dark-muted);
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.pub-year-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark-muted);
+  margin-bottom: 12px;
+  scroll-margin-top: calc(var(--nav-h) + 16px);
+}
+
 /* ─── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .figures-grid { grid-template-columns: repeat(2, 1fr); }

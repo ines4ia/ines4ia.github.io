@@ -1,5 +1,5 @@
-name: PhD Thesis Defense
-description: Register a PhD thesis defense to be published on the INES.IA website — both as an event announcement and as an achievement (product) on the Results page.
+name: Thesis / Dissertation / Monograph Defense
+description: Register a PhD thesis, Master's dissertation, or undergraduate monograph (TCC) defense to be published on the INES.IA website — both as an event announcement and as an achievement (product) on the Results page.
 title: "[Thesis]: "
 labels: ["enhancement", "thesis", "achievement", "event"]
 assignees:
@@ -8,12 +8,22 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill in the thesis defense details below. This information will be used to announce the defense and to add the thesis as an INES.IA achievement on the site's Results page.
+        Please fill in the defense details below. This information will be used to announce the defense and to add it as an INES.IA achievement on the site's Results page.
+  - type: dropdown
+    id: degree
+    attributes:
+      label: Degree Level
+      options:
+        - "PhD Thesis"
+        - "Master's Dissertation"
+        - "Undergraduate Monograph (TCC)"
+    validations:
+      required: true
   - type: input
     id: student
     attributes:
       label: Student
-      description: Full name of the student defending the thesis.
+      description: Full name of the student defending the thesis, dissertation, or monograph.
       placeholder: "Jairo Raphael Moreira Correia de Souza"
     validations:
       required: true
@@ -36,16 +46,16 @@ body:
   - type: input
     id: program
     attributes:
-      label: Graduate Program / Institution
-      description: The graduate program and institution granting the degree.
+      label: Program / Institution
+      description: The graduate or undergraduate program and institution granting the degree.
       placeholder: "Programa de Pós-Graduação em Ciência da Computação — UFPE / Centro de Informática"
     validations:
       required: true
   - type: input
     id: thesis-title
     attributes:
-      label: Thesis Title
-      description: The exact title of the thesis.
+      label: Title
+      description: The exact title of the thesis, dissertation, or monograph.
     validations:
       required: true
   - type: input

@@ -1,8 +1,11 @@
-# PhD thesis defenses, added manually from the "PhD Thesis Defense" issue template.
-# Each thesis becomes an achievement on the Results page, grouped like publications
-# by relatedType ("case-study" or "theme") + relatedSlug.
+# PhD/MSc/undergraduate thesis, dissertation, and monograph defenses, added manually
+# from the "Thesis / Dissertation / Monograph Defense" issue template. Each entry
+# becomes an achievement on the Results page, grouped like publications by
+# relatedType ("case-study" or "theme") + relatedSlug. `degree` is one of
+# "PhD", "MSc", "Undergraduate".
 theses:
   - key: "souza2026exceptionhandling"
+    degree: "PhD"
     student: "Jairo Raphael Moreira Correia de Souza"
     advisor: "Prof. Leopoldo Motta Teixeira (UFPE / Centro de Informática)"
     coadvisor: "Prof. Baldoino Fonseca dos Santos Neto (UFAL / IC)"
@@ -22,6 +25,7 @@ theses:
     relatedSlug: "maintenance-evolution-ai4se"
 
   - key: "lima2026harmfulcode"
+    degree: "PhD"
     student: "Rodrigo dos Santos Lima"
     advisor: "Prof. Leopoldo Motta Teixeira (UFPE / Centro de Informática)"
     coadvisor: "Prof. Baldoino Fonseca dos Santos Neto (UFAL / Instituto de Computação)"

@@ -1,0 +1,4 @@
+# Tools developed by INES.IA, added manually from the "New Tool" issue template.
+# Each tool becomes an achievement on the Results page, grouped like publications
+# by relatedType ("case-study" or "theme") + relatedSlug.
+tools: []

@@ -1,5 +1,5 @@
 <article class="pub-card thesis-card" id="{{ .key }}">
-  <span class="team-card-badge thesis-badge">PhD Thesis</span>
+  <span class="team-card-badge thesis-badge">{{ if eq .degree "PhD" }}PhD Thesis{{ else if eq .degree "MSc" }}MSc Dissertation{{ else }}Undergraduate Monograph{{ end }}</span>
   <h3 class="pub-title">
     {{ if .link }}<a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
   </h3>

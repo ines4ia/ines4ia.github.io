@@ -1,0 +1,73 @@
+name: New Tool
+description: Register a tool developed within INES.IA to be added as an achievement on the site's Results page.
+title: "[Tool]: "
+labels: ["enhancement", "tool"]
+assignees:
+  - rbonifacio
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in the tool's details below. This information will be used to add it to the site's Results page.
+  - type: input
+    id: name
+    attributes:
+      label: Tool Name
+      description: The name of the tool.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      description: A short paragraph describing what the tool does.
+    validations:
+      required: true
+  - type: input
+    id: repo-link
+    attributes:
+      label: Repository Link
+      description: URL to the tool's source code repository.
+      placeholder: "https://github.com/org/repo"
+    validations:
+      required: true
+  - type: dropdown
+    id: related-to
+    attributes:
+      label: Related Case Study or Research Theme
+      description: Which case study or research theme(s) is this tool related to? Start typing to filter the list. You can select more than one.
+      multiple: true
+      options:
+        - "Case Study: Health"
+        - "Case Study: Education"
+        - "Case Study: Environmental Crisis Management"
+        - "Case Study: Justice"
+        - "Case Study: Carbon Credits"
+        - "Case Study: Robotics"
+        - "Theme: Requirements Analysis & Management — SE4AI"
+        - "Theme: Requirements Analysis & Management — AI4SE"
+        - "Theme: Project Management — SE4AI"
+        - "Theme: Project Management — AI4SE"
+        - "Theme: Configuration Management — SE4AI"
+        - "Theme: Configuration Management — AI4SE"
+        - "Theme: Testing & Code Review — SE4AI"
+        - "Theme: Testing & Code Review — AI4SE"
+        - "Theme: Verification — SE4AI"
+        - "Theme: Verification — AI4SE"
+        - "Theme: Design & Architecture — SE4AI"
+        - "Theme: Design & Architecture — AI4SE"
+        - "Theme: Implementation & Optimization — SE4AI"
+        - "Theme: Implementation & Optimization — AI4SE"
+        - "Theme: Maintenance & Evolution — SE4AI"
+        - "Theme: Maintenance & Evolution — AI4SE"
+        - "Theme: Evidence-Based Assessment — Transversal"
+        - "Not sure / none of the above"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else worth knowing.
+    validations:
+      required: false
