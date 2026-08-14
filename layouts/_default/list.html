@@ -10,7 +10,7 @@
 
 <div class="page-body">
   <div class="container">
-    {{ if eq .Section "news" }}
+    {{ if or (eq .Section "news") (eq .Section "events") }}
     <div class="news-list-grid">
       {{ range .Pages }}
       <article class="news-card">
