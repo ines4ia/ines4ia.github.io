@@ -17,7 +17,7 @@
     {{ $themes := (index hugo.Data "research-themes").themes }}
 
     {{/* ═══ Articles ═══════════════════════════════════════════════════ */}}
-    <h2 class="results-section-title">Articles</h2>
+    <h2 class="results-section-title">Research Papers</h2>
     {{ if gt (len $pubs) 0 }}
       {{ $caseStudyPubs := where $pubs "relatedType" "case-study" }}
       {{ $themePubs := where $pubs "relatedType" "theme" }}
@@ -54,7 +54,7 @@
         {{ end }}
       {{ end }}
     {{ else }}
-    <p class="results-empty">No articles yet — check back soon.</p>
+    <p class="results-empty">No research papers yet — check back soon.</p>
     {{ end }}
 
     {{/* ═══ Tools ══════════════════════════════════════════════════════ */}}
