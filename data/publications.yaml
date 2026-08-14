@@ -57,3 +57,11 @@ publications:
     link: "https://arxiv.org/abs/2504.07277"
     relatedType: "theme"
     relatedSlug: "maintenance-evolution-ai4se"
+  - key: "costa2026rv4android"
+    title: "RV4Android: An End-to-End Pipeline for Runtime Verification of Cryptographic API Specifications on Contemporary Android Applications"
+    authors: "Pedro Henrique Teixeira Costa, Rodrigo Bonifácio"
+    venue: "SBSEG 2026 (Tool Session)"
+    year: 2026
+    link: "https://ines4ia.github.io/papers/sbseg-rv4android.pdf"
+    relatedType: "theme"
+    relatedSlug: "verification-ai4se"

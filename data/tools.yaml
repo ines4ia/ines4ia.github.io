@@ -1,4 +1,10 @@
 # Tools developed by INES.IA, added manually from the "New Tool" issue template.
 # Each tool becomes an achievement on the Results page, grouped like publications
 # by relatedType ("case-study" or "theme") + relatedSlug.
-tools: []
+tools:
+  - key: "rv4android"
+    name: "RV4Android"
+    description: "An end-to-end runtime verification pipeline for contemporary Android applications. Modernizes the instrumentation pipeline, compiles specifications (e.g., JCA usage rules specified with JavaMOP) into runtime monitors, injects them into APKs, and automates execution with Android test-generation tools while measuring execution coverage."
+    repoLink: "https://github.com/PAMunb/rvsec/tree/master/rv-android"
+    relatedType: "theme"
+    relatedSlug: "verification-ai4se"
