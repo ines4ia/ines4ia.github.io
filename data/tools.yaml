@@ -4,7 +4,7 @@
 tools:
   - key: "rv4android"
     name: "RV4Android"
-    description: "An end-to-end runtime verification pipeline for contemporary Android applications. Modernizes the instrumentation pipeline, compiles specifications (e.g., JCA usage rules specified with JavaMOP) into runtime monitors, injects them into APKs, and automates execution with Android test-generation tools while measuring execution coverage."
+    description: "An end-to-end runtime verification pipeline for contemporary Android applications. It modernizes the instrumentation pipeline, compiles specifications (e.g., JCA usage rules specified with JavaMOP) into runtime monitors, injects them into APKs, and automates execution with Android test-generation tools while measuring execution coverage. Within INES.IA, RV4Android is used to investigate the capabilities of AI-based extensions to test-case generation tools for identifying API misuses."
     repoLink: "https://github.com/PAMunb/rvsec/tree/master/rv-android"
     relatedType: "theme"
     relatedSlug: "verification-ai4se"
