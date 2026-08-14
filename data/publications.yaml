@@ -65,3 +65,11 @@ publications:
     link: "https://ines4ia.github.io/papers/sbseg-rv4android.pdf"
     relatedType: "theme"
     relatedSlug: "verification-ai4se"
+  - key: "vaz2026cobol"
+    title: "A Spec-Driven Approach for Source Code Summarization of COBOL Legacy Systems with LLMs"
+    authors: "João Pedro de Camargo Vaz, Vinicius Assumpção de Araújo, Murilo Edson de Carvalho Souza, Michael Rodrigues da Silva, Rodrigo Bonifácio de Almeida"
+    venue: "SBES 2026 (Insightful Ideas Track)"
+    year: 2026
+    link: "https://ines4ia.github.io/papers/sbes-cobol-llm-summarization.pdf"
+    relatedType: "theme"
+    relatedSlug: "maintenance-evolution-ai4se"

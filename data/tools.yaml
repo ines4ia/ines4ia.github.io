@@ -8,3 +8,10 @@ tools:
     repoLink: "https://github.com/PAMunb/rvsec/tree/master/rv-android"
     relatedType: "theme"
     relatedSlug: "verification-ai4se"
+
+  - key: "cobol-spec-driven-pipeline"
+    name: "Spec-Driven COBOL Documentation Pipeline"
+    description: "A rule-governed, specification-driven pipeline for recovering and organizing knowledge from COBOL legacy systems with LLM support. It decomposes legacy-system understanding into nine concern-bounded stages, producing reusable intermediate artifacts with traceability to repository evidence and explicit recording of uncertainty (Verified, Inferred, Unknown, or Confirmation Required)."
+    repoLink: "https://github.com/ppgi-2025-cobol/preliminary-work"
+    relatedType: "theme"
+    relatedSlug: "maintenance-evolution-ai4se"
