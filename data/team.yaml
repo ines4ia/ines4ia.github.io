@@ -256,6 +256,15 @@ members:
     lattes: "http://lattes.cnpq.br/6613487636748832"
     webpage: "https://viniciusgarcia.me"
 
+  - name: "Fernando Trinta"
+    slug: "fernando-trinta"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Federal University of Ceará - UFC"
+    bio: "Fernando Trinta is an Associate Professor in the Department of Computer Science at the Federal University of Ceará (UFC), where he also teaches and advises students in the Graduate Program in Computer Science. He holds M.Sc. and Ph.D. degrees from the Federal University of Pernambuco. He is a member of the Alan Turing Laboratory, where he coordinates several projects in partnership with companies and government organizations. His research interests include Software Architecture, Fog/Edge Computing, Observability, and support for real-time audio/video communication. Within INES.IA, he investigates the use of AI to support software architecture design and production."
+    orcid: "https://orcid.org/0000-0002-0206-1419"
+    lattes: "http://lattes.cnpq.br/8908026219336623"
+
   # ── Post-Doc Researchers ─────────────────────────────────────────────
   - name: "Érico Medeiros"
     slug: "erico-medeiros"
