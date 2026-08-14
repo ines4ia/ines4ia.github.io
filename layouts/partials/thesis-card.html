@@ -1,0 +1,22 @@
+<article class="pub-card thesis-card">
+  <span class="team-card-badge thesis-badge">PhD Thesis</span>
+  <h3 class="pub-title">
+    {{ if .link }}<a href="{{ .link }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}
+  </h3>
+  <p class="thesis-student">{{ .student }}</p>
+  <p class="pub-authors">
+    Advisor: {{ .advisor }}{{ with .coadvisor }} · Co-advisor: {{ . }}{{ end }}
+  </p>
+  <p class="pub-venue">
+    {{ .program }} · {{ dateFormat "Jan 2, 2006" .defenseDate }}{{ with .location }} · {{ . }}{{ end }}
+  </p>
+  {{ if gt (len .committee) 0 }}
+  <p class="thesis-committee"><strong>Committee:</strong> {{ delimit .committee ", " }}</p>
+  {{ end }}
+  {{ with .abstract }}
+  <details class="thesis-abstract">
+    <summary>Abstract</summary>
+    <p>{{ . }}</p>
+  </details>
+  {{ end }}
+</article>

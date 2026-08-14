@@ -912,6 +912,43 @@ section { padding: 80px 0; }
   font-style: italic;
 }
 
+/* ─── Thesis card (Results page achievements) ────────────────────────── */
+.thesis-card { border-left: 3px solid var(--brand); }
+.thesis-badge { display: inline-block; margin-bottom: 10px; }
+.thesis-student {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+.thesis-committee {
+  font-size: 13px;
+  color: var(--text-dark-muted);
+  line-height: 1.6;
+  margin-top: 10px;
+}
+.thesis-abstract {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--light-border);
+}
+.thesis-abstract summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand);
+  list-style: none;
+}
+.thesis-abstract summary::-webkit-details-marker { display: none; }
+.thesis-abstract summary::before { content: "+ "; }
+.thesis-abstract[open] summary::before { content: "– "; }
+.thesis-abstract p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-dark-muted);
+  margin-top: 10px;
+}
+
 /* ─── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .figures-grid { grid-template-columns: repeat(2, 1fr); }

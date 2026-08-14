@@ -1,0 +1,131 @@
+name: PhD Thesis Defense
+description: Register a PhD thesis defense to be published on the INES.IA website — both as an event announcement and as an achievement (product) on the Results page.
+title: "[Thesis]: "
+labels: ["enhancement", "thesis", "achievement", "event"]
+assignees:
+  - rbonifacio
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill in the thesis defense details below. This information will be used to announce the defense and to add the thesis as an INES.IA achievement on the site's Results page.
+  - type: input
+    id: student
+    attributes:
+      label: Student
+      description: Full name of the student defending the thesis.
+      placeholder: "Jairo Raphael Moreira Correia de Souza"
+    validations:
+      required: true
+  - type: input
+    id: advisor
+    attributes:
+      label: Advisor
+      description: Full name of the advisor, including title (e.g. "Prof.", "Profa.") and affiliation.
+      placeholder: "Prof. Leopoldo Motta Teixeira (UFPE / Centro de Informática)"
+    validations:
+      required: true
+  - type: input
+    id: co-advisor
+    attributes:
+      label: Co-advisor(s)
+      description: Full name(s) of any co-advisor(s), including affiliation, if applicable.
+      placeholder: "Prof. Baldoino Fonseca dos Santos Neto (UFAL / IC)"
+    validations:
+      required: false
+  - type: input
+    id: program
+    attributes:
+      label: Graduate Program / Institution
+      description: The graduate program and institution granting the degree.
+      placeholder: "Programa de Pós-Graduação em Ciência da Computação — UFPE / Centro de Informática"
+    validations:
+      required: true
+  - type: input
+    id: thesis-title
+    attributes:
+      label: Thesis Title
+      description: The exact title of the thesis.
+    validations:
+      required: true
+  - type: input
+    id: defense-date
+    attributes:
+      label: Defense Date
+      description: Date of the defense.
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: input
+    id: defense-time-location
+    attributes:
+      label: Time / Location
+      description: Time and location (or video conference link/platform) of the defense.
+      placeholder: "8h — via Google Meet"
+    validations:
+      required: true
+  - type: textarea
+    id: committee
+    attributes:
+      label: Examination Committee
+      description: One examiner per line, including title and affiliation.
+      placeholder: |
+        Prof. Breno Alexandro Ferreira de Miranda (UFPE / Centro de Informática)
+        Profa. Fernanda Madeiral Delfim (UFPE / Centro de Informática)
+    validations:
+      required: true
+  - type: dropdown
+    id: related-to
+    attributes:
+      label: INES.IA Research Theme (line of research)
+      description: Which INES.IA research theme(s) or case study does this thesis belong to? Start typing to filter the list. You can select more than one, but pick the single most representative one first.
+      multiple: true
+      options:
+        - "Case Study: Health"
+        - "Case Study: Education"
+        - "Case Study: Environmental Crisis Management"
+        - "Case Study: Justice"
+        - "Case Study: Carbon Credits"
+        - "Case Study: Robotics"
+        - "Theme: Requirements Analysis & Management — SE4AI"
+        - "Theme: Requirements Analysis & Management — AI4SE"
+        - "Theme: Project Management — SE4AI"
+        - "Theme: Project Management — AI4SE"
+        - "Theme: Configuration Management — SE4AI"
+        - "Theme: Configuration Management — AI4SE"
+        - "Theme: Testing & Code Review — SE4AI"
+        - "Theme: Testing & Code Review — AI4SE"
+        - "Theme: Verification — SE4AI"
+        - "Theme: Verification — AI4SE"
+        - "Theme: Design & Architecture — SE4AI"
+        - "Theme: Design & Architecture — AI4SE"
+        - "Theme: Implementation & Optimization — SE4AI"
+        - "Theme: Implementation & Optimization — AI4SE"
+        - "Theme: Maintenance & Evolution — SE4AI"
+        - "Theme: Maintenance & Evolution — AI4SE"
+        - "Theme: Evidence-Based Assessment — Transversal"
+        - "Not sure / none of the above"
+    validations:
+      required: true
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract
+      description: Full abstract of the thesis. On the site this will be shown collapsed by default, with an option to expand.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Thesis Link
+      description: URL to the full thesis (repository, PDF, DOI), if already available.
+      placeholder: "https://repositorio.ufpe.br/..."
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Anything else worth knowing.
+    validations:
+      required: false
