@@ -893,6 +893,7 @@ section { padding: 80px 0; }
   border-radius: 8px;
   padding: 20px 24px;
   margin-bottom: 16px;
+  scroll-margin-top: calc(var(--nav-h) + 16px);
 }
 .pub-title {
   font-size: 16px;

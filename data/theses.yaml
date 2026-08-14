@@ -2,7 +2,8 @@
 # Each thesis becomes an achievement on the Results page, grouped like publications
 # by relatedType ("case-study" or "theme") + relatedSlug.
 theses:
-  - student: "Jairo Raphael Moreira Correia de Souza"
+  - key: "souza2026exceptionhandling"
+    student: "Jairo Raphael Moreira Correia de Souza"
     advisor: "Prof. Leopoldo Motta Teixeira (UFPE / Centro de Informática)"
     coadvisor: "Prof. Baldoino Fonseca dos Santos Neto (UFAL / IC)"
     program: "Programa de Pós-Graduação em Ciência da Computação — UFPE / Centro de Informática"
