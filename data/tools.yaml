@@ -22,3 +22,17 @@ tools:
     repoLink: "https://sigame.space/"
     relatedType: "case-study"
     relatedSlug: "education"
+
+  - key: "engaja-mais"
+    name: "Engaja+"
+    description: "A web platform that lets teachers register students with ASD (Autism Spectrum Disorder), attach a natural-language pedagogical report, and automatically generate four types of individualized material via GPT-4o-mini: an Individualized Teaching Plan, study material and homework activities, an assessment model, and a gamification strategy. Built with architectural reuse on top of SofIA (ASSERT Lab/CIn-UFPE), and evaluated in a qualitative study with five ASD specialist teachers, whose materials were rated positively by four of the five participants."
+    repoLink: "https://github.com/BarbaraVazF/engaja_mais"
+    relatedType: "case-study"
+    relatedSlug: "education"
+
+  - key: "sofia-deck"
+    name: "SofIA: A Framework and Desktop Tool for LLM-Assisted Software Planning"
+    description: "A desktop app that turns a project idea into a complete specification deck — requirements, architecture, epics, user stories, and design canvas — powered by AI. It generates a requirements document (functional and non-functional), project scope (in/out-of-scope items and assumptions), architecture (component breakdown and technical decisions), a project plan (tasks, deliverables, milestones), and epics with user stories, acceptance criteria, and BDD scenarios. Everything is stored locally via IndexedDB — no cloud account required."
+    repoLink: "https://github.com/tklsn/deck"
+    relatedType: "theme"
+    relatedSlug: "project-management-ai4se"
