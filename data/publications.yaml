@@ -89,3 +89,11 @@ publications:
     link: "https://arxiv.org/abs/2608.13730"
     relatedType: "theme"
     relatedSlug: "project-management-ai4se"
+  - key: "barbosa2026semanticconflicts"
+    title: "Assessing the Effectiveness of Large Language Models in Detecting Semantic Conflicts"
+    authors: "Nathalia Barbosa, Paulo Borba, Léuson Da Silva"
+    venue: "Journal of Software Engineering Research and Development (JSERD)"
+    year: 2026
+    link: "https://doi.org/10.5753/jserd.2026.7565"
+    relatedType: "theme"
+    relatedSlug: "configuration-management-ai4se"
