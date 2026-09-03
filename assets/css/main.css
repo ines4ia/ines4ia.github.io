@@ -564,7 +564,7 @@ section { padding: 80px 0; }
 
 .error-404-desc {
   font-size: 1.125rem;
-  color: #a1a1aa;
+  color: var(--text-dark-muted);
   margin-bottom: 2rem;
   line-height: 1.6;
 }
