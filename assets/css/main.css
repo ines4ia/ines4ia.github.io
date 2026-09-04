@@ -34,6 +34,15 @@ body {
   -webkit-font-smoothing: antialiased;
   color: var(--text-dark);
   background: var(--light-card);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 a { color: var(--brand); text-decoration: none; }
 a:hover { color: var(--brand-dark); }
@@ -125,7 +134,7 @@ section { padding: 80px 0; }
   padding: 0 24px;
 }
 
-.nav-logo img { height: 48px; width: auto; }
+.nav-logo img { height: 60px; width: auto; }
 
 .nav-links {
   display: flex;
@@ -523,9 +532,53 @@ section { padding: 80px 0; }
   margin-top: -8px;
 }
 
+/* ─── Page Erro 404 ─────────────────────────────────────────────────────────── */
+.error-404-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.error-404-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-404-badge {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--brand, #3b82f6);
+  margin-bottom: 1rem;
+  letter-spacing: -2px;
+}
+
+.error-404-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.error-404-desc {
+  font-size: 1.125rem;
+  color: var(--text-dark-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.error-404-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* ─── Footer ─────────────────────────────────────────────────────────── */
 .footer {
-  background: var(--brand);
+  background: var(--bg-surface);
   padding: 24px 0;
 }
 
@@ -539,7 +592,7 @@ section { padding: 80px 0; }
   flex-wrap: wrap;
 }
 
-.footer-logo img { height: 32px; }
+.footer-logo img { height: 60px; }
 
 .footer-meta {
   display: flex;
