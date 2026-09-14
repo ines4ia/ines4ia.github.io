@@ -222,6 +222,15 @@ members:
     lattes: "http://lattes.cnpq.br/0033981436042117"
     webpage: "https://www.cin.ufpe.br/~rmfl"
 
+  - name: "Rodrigo Andrade"
+    slug: "rodrigo-andrade"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade Federal do Agreste de Pernambuco - UFAPE"
+    bio: "Rodrigo Andrade is a professor at the Universidade Federal do Agreste de Pernambuco (UFAPE), working in Software Engineering and Human-Computer Interaction. He holds a Ph.D. in Computer Science (2013-2018), an M.Sc. in Computer Science (2010-2012), and a B.Sc. in Computer Science (2005-2009), all from the Informatics Center of the Federal University of Pernambuco (CIn-UFPE). His research focuses mainly on Software Product Lines, Software Reuse, Software Modularity, Software Privacy and Security, Human-Computer Interaction, Artificial Intelligence for Software Engineering, and Software Sustainability. He is also the founder of the Software Engineering and Usability Research Group (SEURG)."
+    orcid: "https://orcid.org/0000-0001-9051-5347"
+    lattes: "http://lattes.cnpq.br/3150254272678008"
+
   - name: "Rodrigo Bonifácio"
     slug: "rodrigo-bonifacio"
     category: "Faculty"
