@@ -43,6 +43,16 @@ members:
     lattes: "https://lattes.cnpq.br/4957418183504876"
     webpage: "https://andrehora.github.io"
 
+  - name: "Breno Bernard Nicolau de França"
+    slug: "breno-franca"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade Estadual de Campinas - UNICAMP"
+    bio: "Breno is a professor at the Institute of Computing (UNICAMP) and coordinator of the LASER research laboratory (Software Engineering and Reliability Laboratory), where he conducts research in Empirical Software Engineering, Continuous Software Development, Software Architecture, and Data Science. He is a member of the Brazilian Computer Society. He earned his PhD in Systems Engineering and Computer Science from COPPE/UFRJ, where he also completed a postdoctoral fellowship. He holds a Master's degree and a Bachelor's degree in Computer Science from the Federal University of Pará (UFPA). Over the years, Breno has collaborated extensively with public and private organizations on Research and Development initiatives involving technology acquisition, evaluation, and transfer supported by experimental methods, software process improvement, and education and training in Software Engineering."
+    orcid: "https://orcid.org/0000-0002-4531-1473"
+    lattes: "http://lattes.cnpq.br/1827990606590127"
+    webpage: "https://ic.unicamp.br/~breno/"
+
   - name: "Eduardo Almeida"
     slug: "eduardo-almeida"
     category: "Faculty"
