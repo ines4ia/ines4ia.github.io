@@ -105,3 +105,11 @@ publications:
     link: "https://doi.org/10.5753/jserd.2026.7565"
     relatedType: "theme"
     relatedSlug: "configuration-management-ai4se"
+  - key: "campos2026mergeconflicts"
+    title: "How AI Coding Agents Resolve Merge Conflicts: An Empirical Study"
+    authors: "Heleno de Souza Campos Junior, Leonardo Gresta Paulino Murta"
+    venue: "SBES 2026"
+    year: 2026
+    link: "https://cbsoft.sbc.org.br/2026/data/papers/sbes/How%20AI%20Coding%20Agents%20Resolve%20Merge%20Conflicts%20An%20Empirical%20Study.pdf"
+    relatedType: "theme"
+    relatedSlug: "configuration-management-ai4se"
