@@ -14,17 +14,22 @@ Este repositório contém o código-fonte da aplicação front-end do portal, de
 
 ## Pré-requisitos
 
-Para executar o projeto localmente, você precisa ter o **Hugo** (preferencialmente a versão *Extended*) instalado em sua máquina.
+Para executar o projeto localmente, você precisa ter o **Hugo Extended** instalado em sua máquina. O deploy usa a versão **0.160.1** (veja `.github/workflows/deploy.yml`) — use a mesma localmente para evitar diferenças entre o seu build e o publicado.
 
-### Instalação do Hugo 
+### Instalação do Hugo
 
 ```bash
-# Recomendado: Instalação via Snap (Versão Extended com suporte a Sass/SCSS)
+# macOS (Homebrew)
+brew install hugo
+
+# Linux (Snap) — a versão extended tem suporte a Sass/SCSS
 sudo snap install hugo --channel=extended
 
-# Verifique se a instalação foi bem-sucedida
+# Verifique a instalação: a saída deve conter "extended"
 hugo version
 ```
+
+Em outras plataformas, ou para fixar exatamente a versão do deploy, baixe o binário `hugo_extended` correspondente em https://github.com/gohugoio/hugo/releases.
 
 ---
 
@@ -42,8 +47,10 @@ cd ines4ia.github.io
 Execute o comando do Hugo para subir o servidor local com recarregamento em tempo real (*Live Reload*):
 
 ```bash
-hugo server 
+hugo server -D
 ```
+
+A flag `-D` inclui os conteúdos marcados como rascunho (`draft: true`), que não aparecem no site publicado.
 
 
 ### 3. Acessar no navegador
@@ -52,7 +59,7 @@ Abra o navegador e acesse o endereço fornecido no terminal:
 http://localhost:1313/
 ```
 
-Qualquer alteração feita nos arquivos dentro das pastas `content/`, `layouts/` ou `static/` atualizará automaticamente a página no navegador.
+Qualquer alteração feita nos arquivos dentro das pastas `content/`, `data/`, `layouts/`, `assets/` ou `static/` atualizará automaticamente a página no navegador.
 
 ---
 
@@ -61,3 +68,17 @@ Qualquer alteração feita nos arquivos dentro das pastas `content/`, `layouts/`
 1. **Nunca edite arquivos dentro da pasta `public/`**: Ela é sobrescrita a cada nova compilação.
 2. **Alterações de Estrutura/HTML**: Modifique os arquivos dentro do diretório `layouts/`.
 3. **Novas Imagens ou Favicons**: Adicione-os na pasta `static/` ou `static/img/`.
+4. **Estilos**: O CSS fica em `assets/css/main.css` e é processado pelo Hugo Pipes. Prefira os tokens já definidos no topo do arquivo (`--brand`, `--bg-surface`, `--text-dark-muted`, `--nav-h`) a valores fixos, para manter a identidade visual e o contraste.
+5. **Conteúdo estruturado**: Equipe, temas de pesquisa, teses, ferramentas e publicações vivem em `data/*.yaml`, não em `content/`.
+6. **Nunca edite `data/publications.yaml` à mão**: ele é gerado. Edite `bibliography/publications.bib` e rode:
+   ```bash
+   python3 scripts/bib_to_yaml.py
+   ```
+7. **Antes de abrir um PR**, rode o build de produção para garantir que os templates não quebraram:
+   ```bash
+   hugo --gc --minify -D
+   ```
+
+### Publicando conteúdo novo
+
+Novas publicações, teses, ferramentas, notícias e bios são solicitadas por **issue**, usando os templates em `.github/ISSUE_TEMPLATE/`. Cada tipo tem seu destino: teses em `data/theses.yaml`, ferramentas em `data/tools.yaml`, publicações em `bibliography/publications.bib` e bios em `data/team.yaml`.
