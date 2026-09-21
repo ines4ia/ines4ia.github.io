@@ -368,6 +368,15 @@ members:
     orcid: "https://orcid.org/0000-0001-7398-8628"
     lattes: "http://lattes.cnpq.br/9457736660395718"
 
+  - name: "Fernanda Sales"
+    slug: "fernanda-sales"
+    category: "Student"
+    role: "MSc Student"
+    affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
+    bio: "Fernanda Sales is a MSc student at the Centro de Informática (CIn) of the Universidade Federal de Pernambuco (UFPE), Brazil. Her research aims to improve software engineering practices through large-scale empirical studies of software repositories. Her research interests include Mining Software Repositories, Static Analysis, Linting Tools, and Software Quality."
+    orcid: "https://orcid.org/0009-0007-5831-2516"
+    lattes: "https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=5215A8E3084BCD459AE24CF239E51818"
+
   - name: "Matheus Costa Pinto Marçal"
     slug: "matheus-costa-pinto-marcal"
     category: "Student"
