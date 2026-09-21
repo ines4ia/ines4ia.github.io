@@ -113,3 +113,11 @@ publications:
     link: "https://cbsoft.sbc.org.br/2026/data/papers/sbes/How%20AI%20Coding%20Agents%20Resolve%20Merge%20Conflicts%20An%20Empirical%20Study.pdf"
     relatedType: "theme"
     relatedSlug: "configuration-management-ai4se"
+  - key: "vanderlei2026pixels"
+    title: "From Pixels to Interaction Graphs: Automated Usability Analytics in the SmartAPSUS Case Study"
+    authors: "Igor Vanderlei, Rodrigo Andrade, Allysson Guimarães, Fernando Emídio, Gabriel Aquino, Miguel Vanderlei, Dimas Cassimiro Nascimento"
+    venue: "V Brazilian Workshop on Intelligent Software Engineering (ISE 2026)"
+    year: 2026
+    link: "https://zenodo.org/records/22776636"
+    relatedType: "case-study"
+    relatedSlug: "health"
