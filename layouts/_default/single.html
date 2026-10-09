@@ -6,7 +6,7 @@
     <h1>{{ .Title }}</h1>
     {{ if not .Params.hideDate }}
     <p style="color:var(--text-muted);font-size:15px;margin-top:8px">
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{ with .Params.dateLabel }}{{ . }}{{ else }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
     </p>
     {{ end }}
   </div>

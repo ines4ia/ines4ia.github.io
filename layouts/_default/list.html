@@ -20,7 +20,7 @@
         </div>
         <div class="news-card-body">
           <time class="news-card-date" datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date.Format "January 2, 2006" }}
+            {{ with .Params.dateLabel }}{{ . }}{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}
           </time>
           <h2 class="news-card-title" style="font-size:18px"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
           <p class="news-card-excerpt">{{ .Summary | truncate 160 }}</p>
