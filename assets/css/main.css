@@ -651,6 +651,60 @@ section { padding: 80px 0; }
 .page-hero .prose h3 { color: var(--text); }
 .page-hero .prose a { color: var(--text); text-decoration: underline; }
 
+/* ─── Invited lecturers (event pages) ───────────────────────────────── */
+.prose .lecturers { display: flex; flex-direction: column; gap: 16px; margin: 8px 0 32px; }
+.prose .lecturer {
+  background: var(--light-card);
+  border: 1px solid var(--light-border);
+  border-left: 4px solid var(--brand);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+.prose .lecturer-name { margin: 0; font-size: 19px; }
+.prose .lecturer-name a { color: var(--text-dark); }
+.prose .lecturer-name a:hover { color: var(--brand); }
+.prose .lecturer-affil { margin: 2px 0 12px; font-size: 14px; color: var(--text-dark-muted); }
+.prose .lecturer-talk {
+  position: relative;
+  margin: 0;
+  padding-left: 20px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+.prose .lecturer-talk::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-dark);
+}
+.prose .lecturer-pending { margin: 8px 0 0; font-size: 14px; font-style: italic; }
+.prose .lecturer-talk + .lecturer-pending { padding-left: 20px; }
+.prose .lecturer-abstract { margin: 6px 0 0 20px; }
+.prose .lecturer-abstract summary {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  color: var(--brand);
+  list-style: none;
+}
+.prose .lecturer-abstract summary:hover { color: var(--brand-dark); text-decoration: underline; }
+.prose .lecturer-abstract summary::-webkit-details-marker { display: none; }
+.prose .lecturer-abstract summary::after { content: "..."; }
+.prose .lecturer-abstract[open] summary::after { content: ""; }
+.prose .lecturer-abstract p {
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .prose .lecturer { padding: 16px; }
+}
+
 /* ─── News list (inner page) ─────────────────────────────────────────── */
 .news-list-grid {
   display: grid;
