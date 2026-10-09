@@ -1,0 +1,20 @@
+{{/* Cover band for a research-theme card: perspective gradient, tag pill,
+     short perspective label and a line icon for the theme's discipline.
+     Context: a theme map from data/research-themes.yaml. */}}
+{{ $icons := dict
+  "Requirements Analysis & Management" `<rect x="16" y="10" width="32" height="44" rx="4"/><path d="M26 10v-2h12v2"/><path d="M23 24l3 3 5-6M35 25h8M23 36l3 3 5-6M35 37h8M23 47h20"/>`
+  "Project Management" `<path d="M10 14v40h44"/><rect x="16" y="18" width="18" height="6" rx="2"/><rect x="26" y="29" width="20" height="6" rx="2"/><rect x="34" y="40" width="16" height="6" rx="2"/>`
+  "Configuration Management" `<circle cx="20" cy="14" r="5"/><circle cx="20" cy="50" r="5"/><circle cx="44" cy="22" r="5"/><path d="M20 19v26M44 27c0 12-24 8-24 18"/>`
+  "Testing & Code Review" `<path d="M18 10L8 20l10 10M34 10l10 10-10 10"/><circle cx="40" cy="42" r="9"/><path d="M46.5 48.5l8 8"/>`
+  "Verification" `<path d="M32 8l20 8v14c0 13-9 22-20 26-11-4-20-13-20-26V16z"/><path d="M23 31l7 7 12-13"/>`
+  "Design & Architecture" `<rect x="24" y="8" width="16" height="12" rx="2"/><rect x="8" y="42" width="16" height="12" rx="2"/><rect x="40" y="42" width="16" height="12" rx="2"/><path d="M32 20v10M16 42v-6h32v6M32 30v6"/>`
+  "Implementation & Optimization" `<path d="M20 18L8 32l12 14M44 18l12 14-12 14"/><path d="M35 14l-6 18h8l-6 18"/>`
+  "Maintenance & Evolution" `<path d="M50 30a18 18 0 1 0-4 13"/><path d="M52 20v10H42"/><path d="M26 32l5 5 9-10"/>`
+  "Evidence-Based Assessment" `<path d="M10 10v44h44"/><rect x="18" y="34" width="7" height="14"/><rect x="30" y="24" width="7" height="24"/><rect x="42" y="16" width="7" height="32"/>`
+}}
+{{ $labels := dict "SE4AI" "SE for AI" "AI4SE" "AI for SE" "Transversal" "Across all themes" }}
+<div class="theme-card-cover">
+  <span class="theme-card-tag">{{ .perspective }}</span>
+  <span class="theme-card-cover-label">{{ index $labels .perspective }}</span>
+  <svg class="theme-card-icon" viewBox="0 0 64 64" aria-hidden="true">{{ index $icons .discipline | safeHTML }}</svg>
+</div>

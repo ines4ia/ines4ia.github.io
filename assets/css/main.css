@@ -861,27 +861,63 @@ section { padding: 80px 0; }
 .theme-pair--single { grid-template-columns: 1fr; }
 
 .theme-card {
+  display: flex;
+  flex-direction: column;
   background: var(--light-card);
   border: 1px solid var(--light-border);
-  border-left: 4px solid var(--brand);
-  border-radius: 8px;
-  padding: 20px 24px;
+  border-radius: var(--radius);
+  overflow: hidden;
   scroll-margin-top: calc(var(--nav-h) + 16px);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
-.theme-card--ai4se { border-left-color: #0891b2; }
-.theme-card--transversal { border-left-color: #c2410c; }
+.theme-card:hover { box-shadow: 0 8px 24px rgba(13,30,58,0.10); transform: translateY(-2px); }
+
+.theme-card-cover {
+  position: relative;
+  height: 120px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #0b1628 0%, #1565C0 100%);
+  color: #fff;
+}
+.theme-card--ai4se .theme-card-cover { background: linear-gradient(135deg, #0b1628 0%, #0891b2 100%); }
+.theme-card--transversal .theme-card-cover { background: linear-gradient(135deg, #0b1628 0%, #c2410c 100%); }
 
 .theme-card-tag {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--brand);
-  margin-bottom: 8px;
+  color: #fff;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.28);
+  padding: 4px 10px;
+  border-radius: 999px;
 }
-.theme-card--ai4se .theme-card-tag { color: #0891b2; }
-.theme-card--transversal .theme-card-tag { color: #c2410c; }
+.theme-card-cover-label {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.theme-card-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  width: 72px;
+  height: 72px;
+  transform: translateY(-50%);
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.9;
+}
+.theme-card-body { padding: 18px 24px 22px; }
 
 .theme-card-desc {
   font-size: 14px;
