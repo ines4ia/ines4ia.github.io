@@ -11,8 +11,19 @@
 <div class="page-body">
   <div class="container">
     {{ if or (eq .Section "news") (eq .Section "events") }}
+    {{/* Pages with `pinned: true` come first while the build date is on or
+         before `pinnedUntil` (if set); everything else keeps date order. */}}
+    {{ $pinned := slice }}{{ $rest := slice }}
+    {{ range .Pages }}
+      {{ if and .Params.pinned (or (not .Params.pinnedUntil) (le now.Unix (time .Params.pinnedUntil).Unix)) }}
+        {{ $pinned = $pinned | append . }}
+      {{ else }}
+        {{ $rest = $rest | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $ordered := $pinned }}{{ range $rest }}{{ $ordered = $ordered | append . }}{{ end }}
     <div class="news-list-grid">
-      {{ range .Pages }}
+      {{ range $ordered }}
       <article class="news-card">
         <div class="news-card-image">
           {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
