@@ -2,6 +2,7 @@
 title: "PhD Thesis Defense: Jairo Raphael Moreira Correia de Souza"
 date: 2026-08-14
 tag: "Thesis Defense"
+image: "/img/events/thesis-defense.svg"
 summary: "Taming Exception Handling: Mining Anti-Patterns, Understanding Bugs, and Recommending Handlers — UFPE / Centro de Informática."
 ---
 

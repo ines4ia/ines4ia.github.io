@@ -2,6 +2,7 @@
 title: "PhD Thesis Defense: Rodrigo dos Santos Lima"
 date: 2026-08-12
 tag: "Thesis Defense"
+image: "/img/events/thesis-defense.svg"
 summary: "Understanding and Detecting Harmful Code — UFPE / Centro de Informática."
 ---
 

@@ -2,6 +2,7 @@
 title: "Third Pernambuco Summer School on Software Engineering (AI×SE 2026)"
 date: 2026-10-09
 tag: "Summer School"
+image: "/img/events/summer-school-2026.svg"
 summary: "AI-Driven Software Engineering: Challenges and Opportunities — December 7–11, 2026, Japaratinga, Alagoas, Brazil."
 ---
 

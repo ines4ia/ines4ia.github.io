@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1628"/>
+      <stop offset="1" stop-color="#1565C0"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e88e5"/>
+      <stop offset="1" stop-color="#0d47a1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd54f" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd54f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#sky)"/>
+  <circle cx="600" cy="250" r="150" fill="url(#glow)"/>
+  <circle cx="600" cy="250" r="70" fill="#ffca28"/>
+  <rect y="250" width="800" height="150" fill="url(#sea)"/>
+  <g fill="none" stroke="#bbdefb" stroke-width="4" stroke-linecap="round" opacity="0.7">
+    <path d="M440 285 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
+    <path d="M480 320 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
+    <path d="M400 355 q20 -12 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t40 0"/>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif" fill="#ffffff">
+    <text x="48" y="190" font-size="76" font-weight="800" letter-spacing="-2">AI<tspan fill="#ffca28">×</tspan>SE</text>
+    <text x="50" y="240" font-size="34" font-weight="700" fill="#bbdefb">2026</text>
+    <text x="50" y="330" font-size="22" font-weight="600">Japaratinga · AL</text>
+    <text x="50" y="362" font-size="22" font-weight="500" fill="#bbdefb">December 7–11</text>
+  </g>
+</svg>
