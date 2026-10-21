@@ -53,6 +53,16 @@ members:
     lattes: "http://lattes.cnpq.br/1827990606590127"
     webpage: "https://ic.unicamp.br/~breno/"
 
+  - name: "Delano Oliveira"
+    slug: "delano-oliveira"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
+    bio: "Delano is an Assistant Professor at the Centro de Informática (CIn) of the Universidade Federal de Pernambuco (UFPE). His research focuses on Software Engineering, with a particular emphasis on Software Quality. Currently, his work aims to recommend improvements for code readability and legibility to benefit software developers. Specifically, Delano is interested in code reviews and mining software repositories. He obtained his Ph.D. in Computer Science under the supervision of Fernando Castor and Fernanda Madeiral. In 2021, he completed an internship in Stockholm, Sweden, at KTH - Royal Institute of Technology, supervised by Martin Monperrus."
+    orcid: "https://orcid.org/0000-0001-6815-9251"
+    lattes: "https://lattes.cnpq.br/0587113301498767"
+    webpage: "https://delanohelio.github.io/"
+
   - name: "Eduardo Almeida"
     slug: "eduardo-almeida"
     category: "Faculty"
@@ -82,6 +92,16 @@ members:
     orcid: "https://orcid.org/0000-0002-6389-3630"
     lattes: "http://lattes.cnpq.br/7310046838140771"
     webpage: "https://fernandocastor.github.io"
+
+  - name: "Gustavo Carvalho"
+    slug: "gustavo-carvalho"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade Federal de Pernambuco - CIn/UFPE"
+    bio: "Gustavo Carvalho holds a Bachelor's, Master's, and PhD in Computer Science from Universidade Federal de Pernambuco (UFPE), with research stays at the University of York (UK) and the University of Bremen (Germany) as part of his doctoral studies. He is a Lecturer at UFPE's Centre of Informatics (CIn), where his primary research interests lie in Software Engineering, with an emphasis on Software Testing and Formal Methods. He has experience applying Controlled Natural Languages, Formal Languages, Model Checkers, and Proof Assistants to the specification, modelling, and verification of critical systems. He also coaches CIn-UFPE's competitive programming teams, which qualified for the 2025 and 2026 ICPC (International Collegiate Programming Contest) World Finals."
+    orcid: "https://orcid.org/0000-0002-3700-9709"
+    lattes: "http://lattes.cnpq.br/9603136866152813"
+    webpage: "https://cin.ufpe.br/~ghpc"
 
   - name: "Gustavo Pinto"
     slug: "gustavo-pinto"
