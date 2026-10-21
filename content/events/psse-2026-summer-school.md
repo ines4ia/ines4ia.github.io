@@ -74,12 +74,12 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 </div>
 <div class="lecturer">
   <h3 class="lecturer-name"><a href="https://gustavoasoares.github.io/">Gustavo Soares</a></h3>
-  <p class="lecturer-affil">Microsoft, USA</p>
+  <p class="lecturer-affil">Google</p>
   <p class="lecturer-talk">Agentic Engineering in Practice: Lessons from Building AI Developer Tools</p>
   <p class="lecturer-pending">Abstract coming soon.</p>
   <details class="lecturer-abstract">
     <summary>Bio</summary>
-    <p>Gustavo Soares is a Researcher at Microsoft, USA, working in the PROSE team. His research focuses on program synthesis techniques and tools to help developers, students, and end users, including learning program transformations from examples. He was previously an assistant professor at the Federal University of Campina Grande (UFCG), Brazil, and a postdoctoral visiting researcher at UC Berkeley. He holds a Ph.D. in Computer Science from UFCG (2014), during which he visited North Carolina State University and interned at Microsoft Research. His work on programming-by-example contributed to tools deployed in Windows as PowerShell commands and to the Microsoft PROSE framework.</p>
+    <p>Gustavo Soares is with Google. His research focuses on program synthesis techniques and tools to help developers, students, and end users, including learning program transformations from examples. He was previously a Researcher at Microsoft, working in the PROSE team, an assistant professor at the Federal University of Campina Grande (UFCG), Brazil, and a postdoctoral visiting researcher at UC Berkeley. He holds a Ph.D. in Computer Science from UFCG (2014), during which he visited North Carolina State University and interned at Microsoft Research. His work on programming-by-example contributed to tools deployed in Windows as PowerShell commands and to the Microsoft PROSE framework.</p>
   </details>
 </div>
 <div class="lecturer">
@@ -98,7 +98,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 The school takes place at the **Bitingui Praia Hotel**, in **Japaratinga**, a small coastal town in the state of Alagoas, Brazil, renowned for its crystal-clear warm waters, coral reefs, and preserved natural beauty.
 
 - **Nearest airports:** Maceió/Zumbi dos Palmares International Airport (MCZ), approximately 90 km from Japaratinga; and Recife/Guararapes–Gilberto Freyre International Airport (REC), approximately 260 km from Japaratinga.
-- **Access:** Transfer options from Maceió airport to Japaratinga will be communicated to registered participants.
+- **Access:** A transfer will be provided only from Recife to Japaratinga. Details will be communicated to registered participants.
 
 Japaratinga is part of the Costa dos Corais (Coral Coast) environmental protection area. The town is known for its tranquil atmosphere, natural pools formed by coral reefs at low tide, and pristine beaches. December brings warm, sunny weather, ideal for an immersive research retreat.
 
