@@ -1,0 +1,13 @@
+{{/* Returns the given pages with `pinned: true` ones first while the build
+     date is on or before `pinnedUntil` (if set); everything else keeps its
+     order. */}}
+{{ $pinned := slice }}{{ $rest := slice }}
+{{ range . }}
+  {{ if and .Params.pinned (or (not .Params.pinnedUntil) (le now.Unix (time .Params.pinnedUntil).Unix)) }}
+    {{ $pinned = $pinned | append . }}
+  {{ else }}
+    {{ $rest = $rest | append . }}
+  {{ end }}
+{{ end }}
+{{ $ordered := $pinned }}{{ range $rest }}{{ $ordered = $ordered | append . }}{{ end }}
+{{ return $ordered }}

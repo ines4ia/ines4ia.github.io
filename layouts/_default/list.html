@@ -10,20 +10,61 @@
 
 <div class="page-body">
   <div class="container">
-    {{ if or (eq .Section "news") (eq .Section "events") }}
-    {{/* Pages with `pinned: true` come first while the build date is on or
-         before `pinnedUntil` (if set); everything else keeps date order. */}}
-    {{ $pinned := slice }}{{ $rest := slice }}
+    {{ if eq .Section "events" }}
+    {{/* Schools and workshops get the featured grid; defenses and other
+         routine events go into a compact list below. A page can opt in
+         explicitly with `featured: true`. */}}
+    {{ $featuredTags := slice "Summer School" "Workshop" }}
+    {{ $featured := slice }}{{ $other := slice }}
     {{ range .Pages }}
-      {{ if and .Params.pinned (or (not .Params.pinnedUntil) (le now.Unix (time .Params.pinnedUntil).Unix)) }}
-        {{ $pinned = $pinned | append . }}
+      {{ if or .Params.featured (in $featuredTags .Params.tag) }}
+        {{ $featured = $featured | append . }}
       {{ else }}
-        {{ $rest = $rest | append . }}
+        {{ $other = $other | append . }}
       {{ end }}
     {{ end }}
-    {{ $ordered := $pinned }}{{ range $rest }}{{ $ordered = $ordered | append . }}{{ end }}
+    {{ with $featured }}
+    <h2 class="results-section-title" id="schools-workshops">Schools &amp; Workshops</h2>
+    <div class="events-featured-grid">
+      {{ range partial "pinned-first.html" . }}
+      <article class="news-card news-card--featured">
+        <div class="news-card-image">
+          {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}
+          {{ with .Params.tag }}<span class="news-card-tag">{{ . }}</span>{{ end }}
+        </div>
+        <div class="news-card-body">
+          <time class="news-card-date" datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ with .Params.dateLabel }}{{ . }}{{ else }}{{ .Date.Format "January 2, 2006" }}{{ end }}
+          </time>
+          <h3 class="news-card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="news-card-excerpt">{{ .Summary | truncate 220 }}</p>
+          <div class="news-card-footer"><a href="{{ .RelPermalink }}">Read more →</a></div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ with $other }}
+    <h2 class="results-section-title" id="defenses">Thesis Defenses &amp; Other Events</h2>
+    <ul class="event-rows">
+      {{ range partial "pinned-first.html" . }}
+      <li class="event-row">
+        <time class="event-row-date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ with .Params.dateLabel }}{{ . }}{{ else }}{{ .Date.Format "Jan 2, 2006" }}{{ end }}
+        </time>
+        <div class="event-row-body">
+          {{ with .Params.tag }}<span class="event-row-tag">{{ . }}</span>{{ end }}
+          <h3 class="event-row-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p class="event-row-excerpt">{{ .Summary | truncate 160 }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ if not .Pages }}<p style="color:var(--text-muted)">No events yet — check back soon.</p>{{ end }}
+    {{ else if eq .Section "news" }}
     <div class="news-list-grid">
-      {{ range $ordered }}
+      {{ range partial "pinned-first.html" .Pages }}
       <article class="news-card">
         <div class="news-card-image">
           {{ with .Params.image }}<img src="{{ . }}" alt="{{ $.Title }}">{{ end }}

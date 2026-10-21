@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1628"/>
+      <stop offset="1" stop-color="#0d47a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Two branches merging: software integration -->
+  <g fill="none" stroke-width="6" stroke-linecap="round">
+    <path d="M470 90 C 560 90, 560 200, 650 200" stroke="#4caf50"/>
+    <path d="M470 310 C 560 310, 560 200, 650 200" stroke="#ffca28"/>
+    <path d="M650 200 H 760" stroke="#bbdefb"/>
+  </g>
+  <g stroke="#0b1628" stroke-width="4">
+    <circle cx="470" cy="90" r="14" fill="#4caf50"/>
+    <circle cx="470" cy="310" r="14" fill="#ffca28"/>
+    <circle cx="650" cy="200" r="18" fill="#bbdefb"/>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif" fill="#ffffff">
+    <text x="48" y="190" font-size="76" font-weight="800" letter-spacing="-2">WAISIV</text>
+    <text x="50" y="240" font-size="30" font-weight="700" fill="#bbdefb">1st edition · 2026</text>
+    <text x="50" y="330" font-size="22" font-weight="600">Japaratinga · AL</text>
+    <text x="50" y="362" font-size="22" font-weight="500" fill="#bbdefb">April 11–13</text>
+  </g>
+</svg>
