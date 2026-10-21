@@ -93,6 +93,12 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 </div>
 </div>
 
+## Registration
+
+Registration is open through the online form below.
+
+<p><a class="btn btn-primary" href="https://forms.gle/j5wjLsJFsTUGExGJ8" target="_blank" rel="noopener">Register now →</a></p>
+
 ## Venue and Location
 
 The school takes place at the **Bitingui Praia Hotel**, in **Japaratinga**, a small coastal town in the state of Alagoas, Brazil, renowned for its crystal-clear warm waters, coral reefs, and preserved natural beauty.

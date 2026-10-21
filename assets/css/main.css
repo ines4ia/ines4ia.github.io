@@ -695,6 +695,7 @@ section { padding: 80px 0; }
 .prose ul, .prose ol { padding-left: 24px; margin-bottom: 20px; }
 .prose li { margin-bottom: 6px; }
 .prose a { color: var(--brand); }
+.prose a.btn-primary { color: #fff; }
 
 /* .prose is also reused inside .page-hero (dark bg) for section index
    pages like About/Research/Results — override its light-theme tokens
