@@ -1,0 +1,45 @@
+# PhD/MSc/undergraduate thesis, dissertation, and monograph defenses, added manually
+# from the "Thesis / Dissertation / Monograph Defense" issue template. Each entry
+# becomes an achievement on the Results page, grouped like publications by
+# relatedType ("case-study" or "theme") + relatedSlug. `degree` is one of
+# "PhD", "MSc", "Undergraduate".
+theses:
+  - key: "souza2026exceptionhandling"
+    degree: "PhD"
+    student: "Jairo Raphael Moreira Correia de Souza"
+    advisor: "Prof. Leopoldo Motta Teixeira (UFPE / Centro de Informática)"
+    coadvisor: "Prof. Baldoino Fonseca dos Santos Neto (UFAL / IC)"
+    program: "Programa de Pós-Graduação em Ciência da Computação — UFPE / Centro de Informática"
+    title: "Taming Exception Handling: Mining Anti-Patterns, Understanding Bugs, and Recommending Handlers"
+    defenseDate: "2026-08-14"
+    location: "8h — via Google Meet"
+    committee:
+      - "Prof. Breno Alexandro Ferreira de Miranda (UFPE / Centro de Informática)"
+      - "Profa. Fernanda Madeiral Delfim (UFPE / Centro de Informática)"
+      - "Prof. Lincoln Souza Rocha (UFC / Departamento de Computação)"
+      - "Prof. Paulo Roberto Miranda Meirelles (USP / Departamento de Ciência da Computação)"
+      - "Profa. Roberta de Souza Coelho (UFRN / Depto. de Informática e Matemática Aplicada)"
+    abstract: "Exception handling mechanisms are designed to manage abnormal events that interrupt a program's normal execution flow, helping software recover from unexpected situations. Although essential for robustness, reliability, and maintainability, their inadequate use can introduce exception handling anti-patterns and exception handling bugs, leading to crashes, incorrect behavior, imprecise diagnostics, silent failures, and degraded software quality. Existing research has focused mainly on Java and C#, leaving a gap in the empirical understanding of exception handling bugs in Python. This thesis addresses that gap through three complementary studies organized around a detect–understand–recommend perspective: first, we develop tool support to detect exception handling anti-patterns; next, we conduct a large-scale empirical characterization of exception handling bugs in Python; finally, we evaluate whether Large Language Models (LLMs) can support exception handling recommendation tasks. To support the detection of inadequate exception handling practices, we design and evaluate Exception Miner, a static analysis tool that identifies exception handling anti-patterns in Java, TypeScript, and Python. Our evaluation on multi-language open-source projects shows that exception handling anti-patterns are common across different languages. Python and TypeScript show similar frequencies, while Java exhibits substantially more occurrences, with Exception Swallowing and Destructive Wrapping among the most prevalent anti-patterns. These findings reinforce the need for unified, multi-language support to analyze exception handling practices in modern software projects. To understand exception handling bugs in Python, we conducted a large-scale empirical study across 550 open-source projects. From 18,904 candidate bug fixes, we identified 1,649 candidate exception handling bugs and manually validated 942 genuine exception handling bugs. We derived a taxonomy of 12 root causes and 25 fix patterns. Unhandled Exception is the most frequent root cause, accounting for 50.64% of the bugs analyzed. The most common repair strategies include adding exception handling blocks, changing exception types, and introducing raise conditions. We also conducted a before-and-after analysis, which shows that many exception handling anti-patterns were preserved from the buggy version, while the fixes still introduced an increase of 196 occurrences of exception handling anti-patterns. To investigate automated support for exception handling recommendations, we empirically evaluated prompting-based LLMs on four exception handling tasks in Python: detecting whether exception handling is necessary, localizing statements that should be wrapped in try blocks, recommending exception types, and generating exception handlers. Using 21 open-source Python projects, 479,345 collected functions, and 379 curated snippets, we evaluated CodeLlama, Phi-4, GPT-4 Mini, Claude Haiku 4.5, and Gemini 3 Flash under four prompting strategies. The results show that LLMs are more effective on earlier-stage reasoning tasks, achieving the best F-scores of 0.752 for detecting the need for exception handling and 0.733 for try-block localization. However, recommending exception types and generating handlers remain substantially more challenging. The generated handlers frequently diverge semantically from developer-written implementations and introduce, on average, 104.2% more exception-related quality violations, particularly due to the absence of exception chaining and overly generic exception catching. Overall, this thesis provides tools, taxonomies, datasets, and empirical evidence to support the detection, understanding, and recommendation of exception handling mechanisms. The findings suggest that static analysis techniques and LLM-based approaches can help developers identify exception-prone code and improve exception handling practices. However, automatically generated exception handling code must be validated through static analysis, testing, and human review before adoption."
+    link: ""
+    relatedType: "theme"
+    relatedSlug: "maintenance-evolution-ai4se"
+
+  - key: "lima2026harmfulcode"
+    degree: "PhD"
+    student: "Rodrigo dos Santos Lima"
+    advisor: "Prof. Leopoldo Motta Teixeira (UFPE / Centro de Informática)"
+    coadvisor: "Prof. Baldoino Fonseca dos Santos Neto (UFAL / Instituto de Computação)"
+    program: "Programa de Pós-Graduação em Ciência da Computação — UFPE / Centro de Informática"
+    title: "Understanding and Detecting Harmful Code"
+    defenseDate: "2026-08-12"
+    location: "13h30 — via Google Meet"
+    committee:
+      - "Prof. Vinicius Cardoso Garcia (UFPE / Centro de Informática)"
+      - "Profa. Juliana Alves Pereira (PUC-RJ / Departamento de Informática)"
+      - "Prof. Wesley Klewerton Guez Assunção (North Carolina State University)"
+      - "Prof. Ivan do Carmo Machado (UFBA / Depto de Ciência da Computação)"
+      - "Prof. Matheus Henrique Esteves Paixão (UECE / Departamento de Informática)"
+    abstract: "Code smells typically indicate poor design decisions and implementations that can degrade software quality. For this reason, they must be carefully detected to avoid such negative consequences. In this context, some studies seek to understand the impact of code smells on software quality, while others propose rule-based or machine-learning-based techniques to detect them. However, these approaches do not focus on identifying which code snippets are actually harmful to software quality. In this thesis, we define Harmful Code as a Smelly code element (i.e., one that contains a code smell) that also has one or more reported bugs — whether fixed or not. The presence of harmful code suggests a higher risk of introducing new defects or degrading the project during maintenance and evolution tasks. We categorize code into four types — Clean, Smelly, Buggy, and Harmful — and use this taxonomy to analyze and detect harmfulness in software projects. We investigate the social representations of harmful code within a community of software developers composed of Brazilian graduate students and industry professionals. We conducted free-association tasks with members of this community to capture their spontaneous perceptions of harmful code, and then compiled the associations to characterize their shared social representations. We also evaluate the feasibility of transfer learning on three common software engineering tasks: code smells, bug-introducing changes, and harmful code. To this end, we focus on open-source projects written in popular programming languages: Java, C++, and C#. We assess the effectiveness and efficiency of the transfer learning models on these tasks and analyze the model complexity required to achieve satisfactory performance."
+    link: ""
+    relatedType: "theme"
+    relatedSlug: "maintenance-evolution-ai4se"

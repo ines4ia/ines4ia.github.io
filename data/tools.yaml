@@ -1,0 +1,38 @@
+# Tools developed by INES.IA, added manually from the "New Tool" issue template.
+# Each tool becomes an achievement on the Results page, grouped like publications
+# by relatedType ("case-study" or "theme") + relatedSlug.
+tools:
+  - key: "rv4android"
+    name: "RV4Android"
+    description: "An end-to-end runtime verification pipeline for contemporary Android applications. It modernizes the instrumentation pipeline, compiles specifications (e.g., JCA usage rules specified with JavaMOP) into runtime monitors, injects them into APKs, and automates execution with Android test-generation tools while measuring execution coverage. Within INES.IA, RV4Android is used to investigate the capabilities of AI-based extensions to test-case generation tools for identifying API misuses."
+    repoLink: "https://github.com/PAMunb/rvsec/tree/master/rv-android"
+    relatedType: "theme"
+    relatedSlug: "verification-ai4se"
+
+  - key: "cobol-spec-driven-pipeline"
+    name: "Spec-Driven COBOL Documentation Pipeline"
+    description: "A rule-governed, specification-driven pipeline for recovering and organizing knowledge from COBOL legacy systems with LLM support. It decomposes legacy-system understanding into nine concern-bounded stages, producing reusable intermediate artifacts with traceability to repository evidence and explicit recording of uncertainty (Verified, Inferred, Unknown, or Confirmation Required)."
+    repoLink: "https://github.com/ppgi-2025-cobol/preliminary-work"
+    relatedType: "theme"
+    relatedSlug: "maintenance-evolution-ai4se"
+
+  - key: "sigame"
+    name: "SIGAME - Sistema Inteligente de Geração Automatizada de Materiais Educacionais"
+    description: "SIGAME turns recorded lectures, audio, and slides into structured teaching materials that are ready to distribute. Unlike general-purpose AI tools, it doesn't invent content: it faithfully extracts what was actually taught in class, strips out the informalities of spoken language, and organizes the text into a document synchronized with the slides presented. Instructors get quality supporting material without adding to their workload, and students can generate supplementary material straight from recorded classes."
+    repoLink: "https://sigame.space/"
+    relatedType: "case-study"
+    relatedSlug: "education"
+
+  - key: "engaja-mais"
+    name: "Engaja+"
+    description: "A web platform that lets teachers register students with ASD (Autism Spectrum Disorder), attach a natural-language pedagogical report, and automatically generate four types of individualized material via GPT-4o-mini: an Individualized Teaching Plan, study material and homework activities, an assessment model, and a gamification strategy. Built with architectural reuse on top of SofIA (ASSERT Lab/CIn-UFPE), and evaluated in a qualitative study with five ASD specialist teachers, whose materials were rated positively by four of the five participants."
+    repoLink: "https://github.com/BarbaraVazF/engaja_mais"
+    relatedType: "case-study"
+    relatedSlug: "education"
+
+  - key: "sofia-deck"
+    name: "SofIA: A Framework and Desktop Tool for LLM-Assisted Software Planning"
+    description: "A desktop app that turns a project idea into a complete specification deck — requirements, architecture, epics, user stories, and design canvas — powered by AI. It generates a requirements document (functional and non-functional), project scope (in/out-of-scope items and assumptions), architecture (component breakdown and technical decisions), a project plan (tasks, deliverables, milestones), and epics with user stories, acceptance criteria, and BDD scenarios. Everything is stored locally via IndexedDB — no cloud account required."
+    repoLink: "https://github.com/tklsn/deck"
+    relatedType: "theme"
+    relatedSlug: "project-management-ai4se"

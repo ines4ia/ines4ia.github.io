@@ -11,27 +11,108 @@
 <div class="page-body">
   <div class="container">
     {{ $pubs := (index hugo.Data "publications").publications }}
-    {{ $caseStudyPubs := where $pubs "relatedType" "case-study" }}
-    {{ $themePubs := where $pubs "relatedType" "theme" }}
+    {{ $theses := (index hugo.Data "theses").theses }}
+    {{ $tools := (index hugo.Data "tools").tools }}
+    {{ $caseStudies := (index hugo.Data "case-studies").studies }}
+    {{ $themes := (index hugo.Data "research-themes").themes }}
 
-    {{ range (index hugo.Data "case-studies").studies }}
-      {{ $group := sort (where $caseStudyPubs "relatedSlug" .slug) "year" "desc" }}
-      {{ if gt (len $group) 0 }}
-      <h2 id="{{ .slug }}" class="pub-domain-title">{{ .domain }}</h2>
-      <div class="pub-list">
-        {{ range $group }}{{ partial "pub-card.html" . }}{{ end }}
-      </div>
+    {{/* ═══ Articles ═══════════════════════════════════════════════════ */}}
+    <h2 class="results-section-title">Research Papers</h2>
+    {{ if gt (len $pubs) 0 }}
+      {{ $caseStudyPubs := where $pubs "relatedType" "case-study" }}
+      {{ $themePubs := where $pubs "relatedType" "theme" }}
+
+      {{ range $caseStudies }}
+        {{ $group := where $caseStudyPubs "relatedSlug" .slug }}
+        {{ if gt (len $group) 0 }}
+        <h3 id="{{ .slug }}" class="pub-domain-title">{{ .domain }}</h3>
+        {{ $years := slice }}
+        {{ range $group }}{{ $years = $years | append .year }}{{ end }}
+        {{ $years = sort ($years | uniq) }}
+        {{ range $y := (collections.Reverse $years) }}
+          <h4 class="pub-year-title">{{ $y }}</h4>
+          <div class="pub-list">
+            {{ range (sort (where $group "year" $y) "title") }}{{ partial "pub-card.html" . }}{{ end }}
+          </div>
+        {{ end }}
+        {{ end }}
       {{ end }}
+
+      {{ range $themes }}
+        {{ $group := where $themePubs "relatedSlug" .slug }}
+        {{ if gt (len $group) 0 }}
+        <h3 id="{{ .slug }}" class="pub-domain-title">{{ .discipline }} — {{ .perspective }}</h3>
+        {{ $years := slice }}
+        {{ range $group }}{{ $years = $years | append .year }}{{ end }}
+        {{ $years = sort ($years | uniq) }}
+        {{ range $y := (collections.Reverse $years) }}
+          <h4 class="pub-year-title">{{ $y }}</h4>
+          <div class="pub-list">
+            {{ range (sort (where $group "year" $y) "title") }}{{ partial "pub-card.html" . }}{{ end }}
+          </div>
+        {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ else }}
+    <p class="results-empty">No research papers yet — check back soon.</p>
     {{ end }}
 
-    {{ range (index hugo.Data "research-themes").themes }}
-      {{ $group := sort (where $themePubs "relatedSlug" .slug) "year" "desc" }}
-      {{ if gt (len $group) 0 }}
-      <h2 id="{{ .slug }}" class="pub-domain-title">{{ .discipline }} — {{ .perspective }}</h2>
-      <div class="pub-list">
-        {{ range $group }}{{ partial "pub-card.html" . }}{{ end }}
-      </div>
+    {{/* ═══ Tools ══════════════════════════════════════════════════════ */}}
+    <h2 class="results-section-title">Tools</h2>
+    {{ if gt (len $tools) 0 }}
+      {{ $caseStudyTools := where $tools "relatedType" "case-study" }}
+      {{ $themeTools := where $tools "relatedType" "theme" }}
+
+      {{ range $caseStudies }}
+        {{ $group := where $caseStudyTools "relatedSlug" .slug }}
+        {{ if gt (len $group) 0 }}
+        <h3 id="tools-{{ .slug }}" class="pub-domain-title">{{ .domain }}</h3>
+        <div class="pub-list">
+          {{ range (sort $group "name") }}{{ partial "tool-card.html" . }}{{ end }}
+        </div>
+        {{ end }}
       {{ end }}
+
+      {{ range $themes }}
+        {{ $group := where $themeTools "relatedSlug" .slug }}
+        {{ if gt (len $group) 0 }}
+        <h3 id="tools-{{ .slug }}" class="pub-domain-title">{{ .discipline }} — {{ .perspective }}</h3>
+        <div class="pub-list">
+          {{ range (sort $group "name") }}{{ partial "tool-card.html" . }}{{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    {{ else }}
+    <p class="results-empty">No tools yet — check back soon.</p>
+    {{ end }}
+
+    {{/* ═══ Theses, Dissertations & Monographs ════════════════════════ */}}
+    <h2 class="results-section-title">Theses, Dissertations &amp; Monographs</h2>
+    {{ if gt (len $theses) 0 }}
+      {{ $caseStudyTheses := where $theses "relatedType" "case-study" }}
+      {{ $themeTheses := where $theses "relatedType" "theme" }}
+
+      {{ range $caseStudies }}
+        {{ $group := sort (where $caseStudyTheses "relatedSlug" .slug) "defenseDate" "desc" }}
+        {{ if gt (len $group) 0 }}
+        <h3 id="theses-{{ .slug }}" class="pub-domain-title">{{ .domain }}</h3>
+        <div class="pub-list">
+          {{ range $group }}{{ partial "thesis-card.html" . }}{{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+
+      {{ range $themes }}
+        {{ $group := sort (where $themeTheses "relatedSlug" .slug) "defenseDate" "desc" }}
+        {{ if gt (len $group) 0 }}
+        <h3 id="theses-{{ .slug }}" class="pub-domain-title">{{ .discipline }} — {{ .perspective }}</h3>
+        <div class="pub-list">
+          {{ range $group }}{{ partial "thesis-card.html" . }}{{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    {{ else }}
+    <p class="results-empty">No theses, dissertations, or monographs yet — check back soon.</p>
     {{ end }}
   </div>
 </div>
