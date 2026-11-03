@@ -75,8 +75,11 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 <div class="lecturer">
   <h3 class="lecturer-name"><a href="https://gustavoasoares.github.io/">Gustavo Soares</a></h3>
   <p class="lecturer-affil">Google</p>
-  <p class="lecturer-talk">Agentic Engineering in Practice: Lessons from Building AI Developer Tools</p>
-  <p class="lecturer-pending">Abstract coming soon.</p>
+  <p class="lecturer-talk">Software Engineering in the Age of AI+SE: Building Agents with Agents</p>
+  <details class="lecturer-abstract">
+    <summary>Abstract</summary>
+    <p>Is it AI for Software Engineering, or Software Engineering for AI? Today, that boundary is disappearing into AI+SE. Software itself looks different now: building agents is part of modern software engineering, not just writing traditional code, and we increasingly use agents alongside classic SE tools to build and improve other agents. In this short course, we will cover core agent concepts and key papers, get hands-on experience building a simple agent, and explore real-world research challenges and techniques for benchmarking, debugging agents, evaluating human-AI interaction, and supporting continuous learning.</p>
+  </details>
   <details class="lecturer-abstract">
     <summary>Bio</summary>
     <p>Gustavo Soares is with Google. His research focuses on program synthesis techniques and tools to help developers, students, and end users, including learning program transformations from examples. He was previously a Researcher at Microsoft, working in the PROSE team, an assistant professor at the Federal University of Campina Grande (UFCG), Brazil, and a postdoctoral visiting researcher at UC Berkeley. He holds a Ph.D. in Computer Science from UFCG (2014), during which he visited North Carolina State University and interned at Microsoft Research. His work on programming-by-example contributed to tools deployed in Windows as PowerShell commands and to the Microsoft PROSE framework.</p>
