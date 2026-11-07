@@ -220,6 +220,16 @@ members:
     lattes: "http://lattes.cnpq.br/2147157840592913"
     webpage: "https://homepages.dcc.ufmg.br/~mtov/"
 
+  - name: "Matheus Paixão"
+    slug: "matheus-paixao"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade Estadual do Ceará - UECE"
+    bio: "Matheus Paixão is an Assistant Professor at the State University of Ceará (UECE), a Software Engineer and Computer Scientist, and the current vice-coordinator of the Graduate Program in Computer Science at UECE. His research interests revolve around software and repository analysis; he finds software engineering data fascinating due to its complexity, lack of structure, and mix of technical and social aspects. His recent publications involve software refactoring, modern code review, mining software repositories, and social aspects of software engineering."
+    orcid: "https://orcid.org/0000-0002-1775-7259"
+    lattes: "http://lattes.cnpq.br/2637595674644923"
+    webpage: "https://mhepaixao.github.io/homepage/"
+
   - name: "Nélio Cacho"
     slug: "nelio-cacho"
     category: "Faculty"
@@ -365,16 +375,6 @@ members:
     bio: "Mateus Baltazar is an AI Tech Lead and holds a Master's degree in Computer Science, combining a solid foundation in Software Engineering with the rigor of academic research. A specialist in Generative Artificial Intelligence (LLMs, RAG, Fine-tuning, GANs) and Computer Vision, he has extensive experience in the technical leadership of research teams and in product development. His career stands out for the design of scalable and innovative technological solutions across multiple sectors: the Education Industry (EdTech), where he works on improving teaching practices using AI; agribusiness (AgTech), where he served as CTO developing predictive analytics; and the building and optimization of neural models for mobile devices (Edge AI). His main professional purpose is to translate complex challenges into practical, viable, and high-impact products for the market."
     orcid: "https://orcid.org/0009-0008-0988-2392"
     lattes: "http://lattes.cnpq.br/8703855182425853"
-
-  - name: "Matheus Paixão"
-    slug: "matheus-paixao"
-    category: "Post-Doc Researcher"
-    role: "Research Contributor"
-    affiliation: "Universidade Estadual do Ceará - UECE"
-    bio: "Matheus Paixão is an Assistant Professor at the State University of Ceará (UECE), a Software Engineer and Computer Scientist, and the current vice-coordinator of the Graduate Program in Computer Science at UECE. His research interests revolve around software and repository analysis; he finds software engineering data fascinating due to its complexity, lack of structure, and mix of technical and social aspects. His recent publications involve software refactoring, modern code review, mining software repositories, and social aspects of software engineering."
-    orcid: "https://orcid.org/0000-0002-1775-7259"
-    lattes: "http://lattes.cnpq.br/2637595674644923"
-    webpage: "https://mhepaixao.github.io/homepage/"
 
   - name: "Rafael Melo Macieira"
     slug: "rafael-melo-macieira"
