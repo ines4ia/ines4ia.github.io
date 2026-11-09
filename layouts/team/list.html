@@ -42,10 +42,10 @@
           {{ with $member.bio }}
           {{ if gt (len .) 220 }}
           <input type="checkbox" id="{{ $toggleID }}" class="team-card-toggle">
-          <p class="team-card-bio">{{ . }}</p>
+          <p class="team-card-bio">{{ . | markdownify }}</p>
           <label for="{{ $toggleID }}" class="team-card-more"></label>
           {{ else }}
-          <p class="team-card-bio">{{ . }}</p>
+          <p class="team-card-bio">{{ . | markdownify }}</p>
           {{ end }}
           {{ end }}
           {{ if or $member.orcid $member.lattes $member.webpage }}

@@ -114,6 +114,16 @@ members:
     lattes: "http://lattes.cnpq.br/1631238943341152"
     webpage: "https://www.gustavopinto.org"
 
+  - name: "Heleno Campos"
+    slug: "heleno-campos"
+    category: "Faculty"
+    role: "Faculty"
+    affiliation: "Universidade Federal do Rio de Janeiro - UFRJ"
+    bio: "Heleno de Souza Campos Junior (Heleno Campos) is an Assistant Professor in the Systems Engineering and Computer Science Program (PESC) at COPPE, Universidade Federal do Rio de Janeiro (UFRJ), and a Postdoc at the Computing Institute of Universidade Federal Fluminense (UFF) under a PDJ CNPq Scholarship Grant. He holds a D.Sc. (2025) degree in Computing from Universidade Federal Fluminense (UFF). He also holds a M.Sc. (2018) degree in Computer Science (Software Engineering) from Universidade Federal de Juiz de Fora (UFJF), and a B.Sc. (2016) degree in Information Systems from IF Sudeste MG. He held a CAPES scholarship for a sandwich program during the B.Sc. in 2013/2014, where he attended the University of Pisa, Italy. He also held a CAPES scholarship during his Master's and Doctorate's. His research interests include software testing and configuration management."
+    orcid: "https://orcid.org/0000-0001-5541-0021"
+    lattes: "http://lattes.cnpq.br/7179984988211505"
+    webpage: "https://helenocampos.github.io/"
+
   - name: "João Eduardo Montandon"
     slug: "joao-eduardo-montandon"
     category: "Faculty"
@@ -314,16 +324,6 @@ members:
     bio: "Érico Medeiros is a Project Manager at CRIAR (CIn-UFPE), where he leads Research, Development, and Innovation (RD&I) initiatives focused on applying Artificial Intelligence and Robotics in real-world contexts. With solid experience in tech project management and agile methodologies, he leads multidisciplinary teams in delivering solutions that integrate AI, mobile applications, and intelligent systems. His work includes projects involving Large Language Models (LLMs), on-device AI execution, and applications in fields such as healthcare and automation, alongside his involvement in research initiatives that strengthen the technical and scientific foundation of the solutions developed."
     orcid: "https://orcid.org/0009-0009-9334-7487"
     lattes: "http://lattes.cnpq.br/9526364512649147"
-
-  - name: "Heleno Campos"
-    slug: "heleno-campos"
-    category: "Post-Doc Researcher"
-    role: "Post-Doc Researcher"
-    affiliation: "Universidade Federal Fluminense - UFF"
-    bio: "Heleno de Souza Campos Junior (Heleno Campos) is currently a Postdoc at the Computing Institute of Universidade Federal Fluminense (UFF) under a PDJ CNPq Scholarship Grant. He holds a D.Sc. (2025) degree in Computing from Universidade Federal Fluminense (UFF). He also holds a M.Sc. (2018) degree in Computer Science (Software Engineering) from Universidade Federal de Juiz de Fora (UFJF), and a B.Sc. (2016) degree in Information Systems from IF Sudeste MG. He held a CAPES scholarship for a sandwich program during the B.Sc. in 2013/2014, where he attended the University of Pisa, Italy. He also held a CAPES scholarship during his Master's and Doctorate's. His research interests include software testing and configuration management."
-    orcid: "https://orcid.org/0000-0001-5541-0021"
-    lattes: "http://lattes.cnpq.br/7179984988211505"
-    webpage: "https://helenocampos.github.io/"
 
   - name: "Leuson Da Silva"
     slug: "leuson-da-silva"
