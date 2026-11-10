@@ -35,7 +35,7 @@ studies:
         name: "Derm.AI"
         subtitle: "Mobile app"
         description: "Uses machine learning models to assist in the analysis of skin lesions such as melanoma. The models are developed with the diversity of the Brazilian population in mind and optimized to run directly on mobile devices, and the app supports quality-driven acquisition of clinical images for AI classification."
-        logo: ""
+        logo: "/img/case-studies/derm-ai.png"
         links:
           website: ""  
           playStore: "https://play.google.com/store/apps/details?id=com.luxai.dermaiyou&hl=pt" 
@@ -51,7 +51,7 @@ studies:
         name: "SIGAME"
         subtitle: "Sistema Inteligente de Geração Automatizada de Materiais Educacionais"
         description: "Turns recorded lectures, audio, and slides into structured teaching materials ready to distribute. Rather than inventing content, it faithfully extracts what was taught, strips out the informalities of spoken language, and organizes the text into a document synchronized with the slides presented."
-        logo: ""
+        logo: "/img/case-studies/sigame.svg"
         links:
           website: "https://sigame.space/"
           playStore: ""
