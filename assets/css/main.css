@@ -759,6 +759,24 @@ section { padding: 80px 0; }
   .prose .lecturer { padding: 16px; }
 }
 
+/* ─── Event schedule (event pages) ───────────────────────────────────── */
+.prose .schedule-note { font-size: 15px; color: var(--text-dark-muted); }
+.prose .schedule-wrap { overflow-x: auto; margin: 8px 0 32px; -webkit-overflow-scrolling: touch; }
+.prose .schedule { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 14px; line-height: 1.35; }
+.prose .schedule th,
+.prose .schedule td { border: 1px solid var(--light-border); padding: 10px 8px; text-align: center; vertical-align: middle; }
+.prose .schedule thead th { background: var(--brand); color: #fff; font-weight: 600; }
+.prose .schedule tbody th { background: var(--light-bg); font-weight: 600; white-space: nowrap; color: var(--text-dark); }
+.prose .schedule td { font-weight: 600; color: var(--text-dark); }
+.prose .schedule .s-kind { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; color: var(--text-dark-muted); }
+.prose .schedule .s-lecture { background: var(--light-card); }
+.prose .schedule .s-handson { background: #e8f5e9; }
+.prose .schedule .s-talk    { background: #fff8e1; }
+.prose .schedule .s-social  { background: #e0f7fa; }
+.prose .schedule .s-special { background: var(--brand-light); }
+.prose .schedule .s-tba     { background: var(--light-bg); color: var(--text-dark-muted); font-weight: 400; font-style: italic; }
+.prose .schedule .s-break td { background: var(--light-bg); color: var(--text-dark-muted); font-weight: 400; font-style: italic; padding: 6px 8px; }
+
 /* ─── News list (inner page) ─────────────────────────────────────────── */
 .news-list-grid {
   display: grid;

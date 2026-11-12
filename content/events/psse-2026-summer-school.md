@@ -96,6 +96,52 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 </div>
 </div>
 
+## Preliminary Schedule
+
+<p class="schedule-note">This is a <strong>preliminary schedule</strong> and may still change. We welcome feedback from participants — please write to <a href="mailto:psse_2026@cin.ufpe.br">psse_2026@cin.ufpe.br</a>.</p>
+
+<div class="schedule-wrap">
+<table class="schedule">
+<thead>
+<tr><th scope="col">Time</th><th scope="col">Mon, Dec 7</th><th scope="col">Tue, Dec 8</th><th scope="col">Wed, Dec 9</th><th scope="col">Thu, Dec 10</th><th scope="col">Fri, Dec 11</th></tr>
+</thead>
+<tbody>
+<tr>
+  <th scope="row">09:00–10:00</th>
+  <td class="s-special">Opening<span class="s-kind">09:30–10:00</span></td>
+  <td class="s-handson">Ralf Lämmel<span class="s-kind">Hands-on</span></td>
+  <td class="s-social" rowspan="2">Social Event<span class="s-kind">Boat Tour</span></td>
+  <td class="s-handson">Gustavo Soares<span class="s-kind">Hands-on</span></td>
+  <td class="s-tba">TBA</td>
+</tr>
+<tr>
+  <th scope="row">10:00–12:00</th>
+  <td class="s-lecture">Rui Abreu<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture">Gustavo Soares<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture">Martin Monperrus<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture">Gustavo Soares<span class="s-kind">Lecture</span></td>
+</tr>
+<tr class="s-break"><th scope="row">12:00–13:30</th><td colspan="5">Lunch</td></tr>
+<tr>
+  <th scope="row">13:30–15:30</th>
+  <td class="s-lecture">Ralf Lämmel<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture">Bogdan Vasilescu<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture">Rui Abreu<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture">Bogdan Vasilescu<span class="s-kind">Lecture</span></td>
+  <td class="s-tba" rowspan="3">TBA</td>
+</tr>
+<tr class="s-break"><th scope="row">15:30–16:00</th><td colspan="4">Coffee Break</td></tr>
+<tr>
+  <th scope="row">16:00–18:00</th>
+  <td class="s-lecture">Martin Monperrus<span class="s-kind">Lecture</span></td>
+  <td class="s-talk">Jim Woodcock<span class="s-kind">Short Talk</span></td>
+  <td class="s-lecture">Ralf Lämmel<span class="s-kind">Lecture</span></td>
+  <td class="s-talk">Gustavo Pinto<span class="s-kind">Short Talk</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
 ## Registration
 
 Registration is open through the online form below.
