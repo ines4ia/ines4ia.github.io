@@ -345,6 +345,16 @@ members:
     lattes: "http://lattes.cnpq.br/7179984988211505"
     webpage: "https://helenocampos.github.io/"
 
+  - name: "João Victor Oliveira da Silva"
+    slug: "joao-victor-oliveira-da-silva"
+    category: "Post-Doc Researcher"
+    role: "Research Contributor"
+    affiliation: "Universidade Federal de Pernambuco - UFPE"
+    photo: "/img/team/joao-victor-oliveira-da-silva.jpg"
+    bio: "João Victor Oliveira da Silva holds a bachelor's degree in Systems Analysis and Development from the Federal Institute of Pernambuco (IFPE, 2025) and is currently pursuing a master's degree at the Center for Informatics (CIn) of the Federal University of Pernambuco (UFPE). He works as a Software Developer at CRIAR and INES.IA, developing solutions that integrate Artificial Intelligence and Software Engineering. Previously, as a Young Researcher at the Brazilian National Education and Research Network (RNP), he contributed to the GT-SIGAME project, developing solutions based on Large Language Models (LLMs) for the automated generation of educational materials. His main research interests include Artificial Intelligence, Large Language Models (LLMs), and intelligent systems development."
+    orcid: "https://orcid.org/0009-0000-0696-0561"
+    lattes: "http://lattes.cnpq.br/4324207468595795"
+
   - name: "Kauã Gabriel Silva de Lima"
     slug: "kaua-gabriel-silva-de-lima"
     category: "Post-Doc Researcher"
