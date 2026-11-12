@@ -777,6 +777,36 @@ section { padding: 80px 0; }
 .prose .schedule .s-tba     { background: var(--light-bg); color: var(--text-dark-muted); font-weight: 400; font-style: italic; }
 .prose .schedule .s-break td { background: var(--light-bg); color: var(--text-dark-muted); font-weight: 400; font-style: italic; padding: 6px 8px; }
 
+.prose .schedule .s-link { color: var(--brand); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.prose .schedule .s-link:hover { color: var(--brand-dark); }
+.talk-dialog {
+  width: min(680px, calc(100vw - 32px));
+  max-height: calc(100vh - 64px);
+  margin: auto;
+  padding: 28px 28px 24px;
+  border: none;
+  border-top: 4px solid var(--brand);
+  border-radius: var(--radius);
+  background: var(--light-card);
+  color: var(--text-dark);
+  box-shadow: 0 20px 60px rgba(6,14,32,0.35);
+  overflow-y: auto;
+}
+.talk-dialog::backdrop { background: rgba(6,14,32,0.55); }
+.talk-dialog-close {
+  position: absolute; top: 8px; right: 12px;
+  border: none; background: none; cursor: pointer;
+  font-size: 28px; line-height: 1; color: var(--text-dark-muted);
+}
+.talk-dialog-close:hover { color: var(--brand); }
+.talk-dialog-name { margin: 0 32px 0 0; font-size: 20px; }
+.talk-dialog-affil { margin: 2px 0 14px; font-size: 14px; color: var(--text-dark-muted); }
+.talk-dialog-talk { margin: 0 0 8px; font-weight: 600; line-height: 1.45; }
+.talk-dialog-pending { margin: 8px 0 0; font-size: 14px; font-style: italic; color: var(--text-dark-muted); }
+.talk-dialog-abstract { margin: 10px 0 0; font-size: 15px; line-height: 1.7; }
+.talk-dialog-abstract a { color: var(--brand); }
+@media (max-width: 600px) { .talk-dialog { padding: 24px 18px 18px; } }
+
 /* ─── News list (inner page) ─────────────────────────────────────────── */
 .news-list-grid {
   display: grid;
