@@ -696,6 +696,14 @@ section { padding: 80px 0; }
 .prose li { margin-bottom: 6px; }
 .prose a { color: var(--brand); }
 .prose a.btn-primary { color: #fff; }
+.btn:disabled,
+.btn:disabled:hover {
+  background: var(--light-border);
+  color: var(--text-dark-muted);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
 
 /* .prose is also reused inside .page-hero (dark bg) for section index
    pages like About/Research/Results — override its light-theme tokens
