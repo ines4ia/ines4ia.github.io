@@ -198,9 +198,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 
 ## Registration
 
-Registration is open through the online form below.
-
-<p><a class="btn btn-primary" href="https://forms.gle/j5wjLsJFsTUGExGJ8" target="_blank" rel="noopener">Register now →</a></p>
+Registration is now **closed**. Thank you to everyone who registered!
 
 ## Venue and Location
 
