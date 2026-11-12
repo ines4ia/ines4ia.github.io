@@ -130,7 +130,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 <tr>
   <th scope="row">10:00–12:00</th>
   <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-woodcock" data-lecturer="lecturer-woodcock">Jim Woodcock</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
 </tr>
@@ -147,7 +147,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 <tr>
   <th scope="row">16:00–18:00</th>
   <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-woodcock" data-lecturer="lecturer-woodcock">Jim Woodcock</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture">Gustavo Pinto<span class="s-kind">Lecture</span></td>
 </tr>
