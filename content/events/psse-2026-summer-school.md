@@ -94,6 +94,19 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
     <p>Bogdan Vasilescu is an Associate Professor in the School of Computer Science at Carnegie Mellon University, USA, and a member of the Software and Societal Systems Department, where he leads the STRUDEL lab (Socio-Technical Research Using Data Excavation). His research focuses on the socio-technical aspects of software development, including the health and sustainability of open-source ecosystems, diversity and human factors, and the impact of AI on software development practices. He was previously a postdoctoral researcher at UC Davis. He holds a Ph.D. in Computer Science from Eindhoven University of Technology (2014), whose dissertation received the Best Dissertation Award from the Institute for Programming Research and Algorithmics. He co-chaired the MSR 2023 program committee, is an Associate Editor of ACM TOSEM, and received Distinguished Reviewer Awards at ASE 2018 and ESEC/FSE 2021.</p>
   </details>
 </div>
+<div class="lecturer">
+  <h3 class="lecturer-name">Jim Woodcock</h3>
+  <p class="lecturer-affil">Southwest University, China &amp; Aarhus University, Denmark</p>
+  <p class="lecturer-talk">Can We Trust AI-Generated Proofs? From Interactive Theorem Proving to Contract-Preserving LLM Agents</p>
+  <details class="lecturer-abstract">
+    <summary>Abstract</summary>
+    <p>Large language models can increasingly generate mathematical arguments, formal specifications, and machine-checkable proofs. But what does it mean for an AI-generated proof to be correct? And can we trust an autonomous agent to preserve the theorem it has been asked to prove?</p>
+    <p>This 2-hour lecture introduces interactive theorem proving using Isabelle/HOL, starting with elementary examples that require no prior knowledge of formal methods. We will see how proof assistants check mathematical arguments and how LLMs can construct and repair formal proofs.</p>
+    <p>The second part introduces CAPRI, an approach to contract-preserving AI-assisted proof repair, in which independently checked constraints prevent an agent from changing the problem it has been asked to solve. We will examine examples from proof-repair experiments and audits of AI-assisted formal developments, including Fermat's Last Theorem and a cascaded double-tank control system.</p>
+    <p>The lecture concludes by exploring the wider assurance challenges of AI-assisted formal verification: specification fidelity, trusted assumptions, reproducibility, and the distinction between proving a theorem correctly and proving the correct theorem.</p>
+    <p>No prior knowledge of Isabelle or interactive theorem proving is required.</p>
+  </details>
+</div>
 </div>
 
 ## Preliminary Schedule
