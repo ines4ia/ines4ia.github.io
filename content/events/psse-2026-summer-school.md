@@ -27,7 +27,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 ## Invited Lecturers
 
 <div class="lecturers">
-<div class="lecturer">
+<div class="lecturer" id="lecturer-abreu">
   <h3 class="lecturer-name"><a href="https://ruimaranhao.com/">Rui Abreu</a></h3>
   <p class="lecturer-affil">Meta &amp; University of Porto, Portugal</p>
   <p class="lecturer-talk">Risk-Aware Software Engineering: Predicting Failure Before Code Lands</p>
@@ -40,7 +40,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
     <p>Rui Abreu is with Meta and the University of Porto (FEUP), Portugal, where he is a Full Professor of Software Engineering. His research focuses on software testing and fault diagnosis, software security and vulnerability detection, AI-assisted software engineering — including risk prediction for code changes at scale — and quantum software engineering. He was previously an Associate Professor at Instituto Superior Técnico (University of Lisbon), a Visiting Researcher at Google NYC, a Member of Research Staff at Xerox PARC, a Visiting Faculty Member at Carnegie Mellon University, and the founding Head of Engineering at DashDash/Rows. He holds a Ph.D. in Computer Science from Delft University of Technology (2009). His work has received several best paper awards, including an ACM SIGSOFT Distinguished Paper Award at ESEC/FSE 2019, and he is an IEEE Senior Member.</p>
   </details>
 </div>
-<div class="lecturer">
+<div class="lecturer" id="lecturer-monperrus">
   <h3 class="lecturer-name"><a href="http://monperrus.net">Martin Monperrus</a></h3>
   <p class="lecturer-affil">KTH Royal Institute of Technology, Sweden</p>
   <p class="lecturer-talk">Software Engineering in the Latent Space</p>
@@ -53,7 +53,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
     <p>Martin Monperrus is Professor of Software Technology at KTH Royal Institute of Technology, Sweden, where he holds a Chair from the Wallenberg Autonomous Systems and Software Program (WASP). His research focuses on AI-assisted coding, automated program repair, and software engineering. He was previously an associate professor at the University of Lille and affiliated researcher at Inria (France), and a research associate at Darmstadt University of Technology (Germany). He holds a Ph.D. from the University of Rennes (2008). His 2009 paper on learning-based code completion, co-authored with Marcel Bruch and Mira Mezini, laid the foundations for tools such as GitHub Copilot and received the ACM SIGSOFT Impact Paper Award (2024); he was elevated to IEEE Fellow (Class of 2026).</p>
   </details>
 </div>
-<div class="lecturer">
+<div class="lecturer" id="lecturer-lammel">
   <h3 class="lecturer-name"><a href="https://www.softlang.org/rlaemmel:home">Ralf Lämmel</a></h3>
   <p class="lecturer-affil">University of Koblenz, Germany</p>
   <p class="lecturer-talk">AI-Based Software Vulnerability Detection</p>
@@ -72,7 +72,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
     <p>Ralf Lämmel is Professor of Computer Science at the University of Koblenz, Germany, where he leads the Software Languages research group. His research focuses on software language engineering, program transformation, reverse and re-engineering, program comprehension, and model-driven engineering, and more recently on knowledge graphs, ontologies, and the use of AI in software engineering. He has held research and engineering positions at Facebook (Meta), Microsoft, Vrije Universiteit Amsterdam, CWI (the Netherlands), the University of L'Aquila, and the University of Rostock. He is a co-founder of the Software Language Engineering (SLE) conference and the GTTSE summer school series, and the author of <em>Software Languages: Syntax, Semantics, and Metaprogramming</em> (Springer, 2018), a Choice Outstanding Academic Title in 2019.</p>
   </details>
 </div>
-<div class="lecturer">
+<div class="lecturer" id="lecturer-soares">
   <h3 class="lecturer-name"><a href="https://gustavoasoares.github.io/">Gustavo Soares</a></h3>
   <p class="lecturer-affil">Google</p>
   <p class="lecturer-talk">Software Engineering in the Age of AI+SE: Building Agents with Agents</p>
@@ -85,7 +85,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
     <p>Gustavo Soares is with Google. His research focuses on program synthesis techniques and tools to help developers, students, and end users, including learning program transformations from examples. He was previously a Researcher at Microsoft, working in the PROSE team, an assistant professor at the Federal University of Campina Grande (UFCG), Brazil, and a postdoctoral visiting researcher at UC Berkeley. He holds a Ph.D. in Computer Science from UFCG (2014), during which he visited North Carolina State University and interned at Microsoft Research. His work on programming-by-example contributed to tools deployed in Windows as PowerShell commands and to the Microsoft PROSE framework.</p>
   </details>
 </div>
-<div class="lecturer">
+<div class="lecturer" id="lecturer-vasilescu">
   <h3 class="lecturer-name"><a href="https://bvasiles.github.io/">Bogdan Vasilescu</a></h3>
   <p class="lecturer-affil">Carnegie Mellon University, USA</p>
   <p class="lecturer-pending">Title to be announced.</p>
@@ -94,13 +94,113 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
     <p>Bogdan Vasilescu is an Associate Professor in the School of Computer Science at Carnegie Mellon University, USA, and a member of the Software and Societal Systems Department, where he leads the STRUDEL lab (Socio-Technical Research Using Data Excavation). His research focuses on the socio-technical aspects of software development, including the health and sustainability of open-source ecosystems, diversity and human factors, and the impact of AI on software development practices. He was previously a postdoctoral researcher at UC Davis. He holds a Ph.D. in Computer Science from Eindhoven University of Technology (2014), whose dissertation received the Best Dissertation Award from the Institute for Programming Research and Algorithmics. He co-chaired the MSR 2023 program committee, is an Associate Editor of ACM TOSEM, and received Distinguished Reviewer Awards at ASE 2018 and ESEC/FSE 2021.</p>
   </details>
 </div>
+<div class="lecturer" id="lecturer-woodcock">
+  <h3 class="lecturer-name">Jim Woodcock</h3>
+  <p class="lecturer-affil">Southwest University, China &amp; Aarhus University, Denmark</p>
+  <p class="lecturer-talk">Can We Trust AI-Generated Proofs? From Interactive Theorem Proving to Contract-Preserving LLM Agents</p>
+  <details class="lecturer-abstract">
+    <summary>Abstract</summary>
+    <p>Large language models can increasingly generate mathematical arguments, formal specifications, and machine-checkable proofs. But what does it mean for an AI-generated proof to be correct? And can we trust an autonomous agent to preserve the theorem it has been asked to prove?</p>
+    <p>This lecture introduces interactive theorem proving using Isabelle/HOL, starting with elementary examples that require no prior knowledge of formal methods. We will see how proof assistants check mathematical arguments and how LLMs can construct and repair formal proofs.</p>
+    <p>The second part introduces CAPRI, an approach to contract-preserving AI-assisted proof repair, in which independently checked constraints prevent an agent from changing the problem it has been asked to solve. We will examine examples from proof-repair experiments and audits of AI-assisted formal developments, including Fermat's Last Theorem and a cascaded double-tank control system.</p>
+    <p>The lecture concludes by exploring the wider assurance challenges of AI-assisted formal verification: specification fidelity, trusted assumptions, reproducibility, and the distinction between proving a theorem correctly and proving the correct theorem.</p>
+    <p>No prior knowledge of Isabelle or interactive theorem proving is required.</p>
+  </details>
 </div>
+</div>
+
+## Preliminary Schedule
+
+<p class="schedule-note">This is a <strong>preliminary schedule</strong> and may still change. Click a lecturer’s name to see the talk abstract. We welcome feedback from participants — please write to <a href="mailto:psse_2026@cin.ufpe.br">psse_2026@cin.ufpe.br</a>.</p>
+
+<div class="schedule-wrap">
+<table class="schedule">
+<thead>
+<tr><th scope="col">Time</th><th scope="col">Mon, Dec 7</th><th scope="col">Tue, Dec 8</th><th scope="col">Wed, Dec 9</th><th scope="col">Thu, Dec 10</th><th scope="col">Fri, Dec 11</th></tr>
+</thead>
+<tbody>
+<tr>
+  <th scope="row">09:00–10:00</th>
+  <td class="s-special">Opening<span class="s-kind">09:30–10:00</span></td>
+  <td class="s-handson"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Hands-on</span></td>
+  <td class="s-social" rowspan="2">Social Event<span class="s-kind">Boat Tour</span></td>
+  <td class="s-handson"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Hands-on</span></td>
+  <td class="s-tba">TBA</td>
+</tr>
+<tr>
+  <th scope="row">10:00–12:00</th>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-woodcock" data-lecturer="lecturer-woodcock">Jim Woodcock</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
+</tr>
+<tr class="s-break"><th scope="row">12:00–13:30</th><td colspan="5">Lunch</td></tr>
+<tr>
+  <th scope="row">13:30–15:30</th>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
+  <td class="s-tba" rowspan="3">TBA</td>
+</tr>
+<tr class="s-break"><th scope="row">15:30–16:00</th><td colspan="4">Coffee Break</td></tr>
+<tr>
+  <th scope="row">16:00–18:00</th>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture">Gustavo Pinto<span class="s-kind">Lecture</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<dialog class="talk-dialog" id="talk-dialog" aria-labelledby="talk-dialog-title">
+<button type="button" class="talk-dialog-close" aria-label="Close">&times;</button>
+<div class="talk-dialog-body"></div>
+</dialog>
+<script>
+(function () {
+  var dlg = document.getElementById('talk-dialog');
+  if (!dlg || typeof dlg.showModal !== 'function') return; // fallback: plain anchor jump
+  var body = dlg.querySelector('.talk-dialog-body');
+  function text(el) { return el ? el.textContent.trim() : ''; }
+  function add(tag, cls, content, html) {
+    var el = document.createElement(tag);
+    if (cls) el.className = cls;
+    if (html) el.innerHTML = content; else el.textContent = content;
+    body.appendChild(el);
+    return el;
+  }
+  document.querySelectorAll('.schedule .s-link').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var card = document.getElementById(a.dataset.lecturer);
+      if (!card) return;
+      e.preventDefault();
+      body.innerHTML = '';
+      add('h3', 'talk-dialog-name', text(card.querySelector('.lecturer-name'))).id = 'talk-dialog-title';
+      add('p', 'talk-dialog-affil', text(card.querySelector('.lecturer-affil')));
+      var talk = card.querySelector('.lecturer-talk');
+      add('p', talk ? 'talk-dialog-talk' : 'talk-dialog-pending', talk ? text(talk) : text(card.querySelector('.lecturer-pending')));
+      card.querySelectorAll('.lecturer-abstract').forEach(function (d) {
+        if (text(d.querySelector('summary')) !== 'Abstract') return;
+        d.querySelectorAll('p').forEach(function (p) { add('p', 'talk-dialog-abstract', p.innerHTML, true); });
+      });
+      if (!body.querySelector('.talk-dialog-abstract')) add('p', 'talk-dialog-pending', 'Abstract to be announced.');
+      dlg.showModal();
+      dlg.scrollTop = 0;
+    });
+  });
+  dlg.querySelector('.talk-dialog-close').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+})();
+</script>
 
 ## Registration
 
-Registration is open through the online form below.
+Registration is now **closed**. Thank you to everyone who registered!
 
-<p><a class="btn btn-primary" href="https://forms.gle/j5wjLsJFsTUGExGJ8" target="_blank" rel="noopener">Register now →</a></p>
+<p><button type="button" class="btn btn-primary" disabled aria-disabled="true">Registration closed</button></p>
 
 ## Venue and Location
 
