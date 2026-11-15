@@ -155,7 +155,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
   <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
-  <td class="s-tba" rowspan="4">Free afternoon<span class="s-kind">Return to Recife</span></td>
+  <td class="s-tba" rowspan="4">Free afternoon<span class="s-kind">Optional return to Recife</span></td>
 </tr>
 <tr class="s-break"><th scope="row">15:00–15:30</th><td colspan="4">Coffee Break</td></tr>
 <tr>
@@ -175,6 +175,9 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 </tbody>
 </table>
 </div>
+
+<p class="schedule-note"><strong>Arrival:</strong> Sunday (Dec 6), from 14:00. Transfers from Recife Airport to Japaratinga leave in the afternoon and in the evening; exact times will be announced soon.<br>
+<strong>Return:</strong> participants can return to Recife on Friday afternoon (Dec 11) or on Saturday (Dec 12). On Saturday, the transfer to Recife leaves at 14:00. Departure times on Friday will be announced soon.</p>
 
 <dialog class="talk-dialog" id="talk-dialog" aria-labelledby="talk-dialog-title">
 <button type="button" class="talk-dialog-close" aria-label="Close">&times;</button>
