@@ -138,7 +138,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 </tr>
 <tr>
   <th scope="row">10:30</th>
-  <td class="s-lecture" rowspan="3"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture<span class="s-time">10:30–12:00</span></span></td>
+  <td class="s-lecture" rowspan="3"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture<span class="s-time">10:30–12:00</span></span></td>
   <td class="s-special" rowspan="3">Student Forum &amp; Closing<span class="s-kind">10:30–12:00</span></td>
 </tr>
 <tr>
@@ -163,7 +163,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
   <td class="s-lecture">Gustavo Pinto<span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
 </tr>
 <tr>
   <th scope="row">17:00–18:00</th>
