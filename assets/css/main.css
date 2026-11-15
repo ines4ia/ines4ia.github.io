@@ -777,6 +777,7 @@ section { padding: 80px 0; }
 .prose .schedule tbody th { background: var(--light-bg); font-weight: 600; white-space: nowrap; color: var(--text-dark); }
 .prose .schedule td { font-weight: 600; color: var(--text-dark); }
 .prose .schedule .s-kind { display: block; margin-top: 2px; font-size: 12px; font-weight: 400; color: var(--text-dark-muted); }
+.prose .schedule .s-time { display: block; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .prose .schedule .s-lecture { background: var(--light-card); }
 .prose .schedule .s-handson { background: #e8f5e9; }
 .prose .schedule .s-talk    { background: #fff8e1; }

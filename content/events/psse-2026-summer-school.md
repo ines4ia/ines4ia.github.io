@@ -120,36 +120,57 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 </thead>
 <tbody>
 <tr>
-  <th scope="row">09:00–10:00</th>
-  <td class="s-special">Opening<span class="s-kind">09:30–10:00</span></td>
-  <td class="s-handson"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Hands-on</span></td>
-  <td class="s-social" rowspan="2">Social Event<span class="s-kind">Boat Tour</span></td>
-  <td class="s-handson"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Hands-on</span></td>
-  <td class="s-tba">TBA</td>
+  <th scope="row">09:00</th>
+  <td class="s-special">Opening<span class="s-kind">09:00–09:30</span></td>
+  <td class="s-lecture" rowspan="2"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture<span class="s-time">09:00–10:00</span></span></td>
+  <td class="s-social" rowspan="6">Social Event<span class="s-kind">Boat Tour<span class="s-time">09:00–12:00</span></span></td>
+  <td class="s-lecture" rowspan="3"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture<span class="s-time">09:00–10:30</span></span></td>
+  <td class="s-handson" rowspan="2"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Hands-on<span class="s-time">09:00–10:00</span></span></td>
 </tr>
 <tr>
-  <th scope="row">10:00–12:00</th>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-woodcock" data-lecturer="lecturer-woodcock">Jim Woodcock</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
+  <th scope="row">09:30</th>
+  <td class="s-lecture" rowspan="3"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture<span class="s-time">09:30–11:00</span></span></td>
+</tr>
+<tr>
+  <th scope="row">10:00</th>
+  <td class="s-lecture" rowspan="4"><a class="s-link" href="#lecturer-woodcock" data-lecturer="lecturer-woodcock">Jim Woodcock</a><span class="s-kind">Lecture<span class="s-time">10:00–12:00</span></span></td>
+  <td class="s-tba">Break<span class="s-kind">10:00–10:30</span></td>
+</tr>
+<tr>
+  <th scope="row">10:30</th>
+  <td class="s-lecture" rowspan="3"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture<span class="s-time">10:30–12:00</span></span></td>
+  <td class="s-special" rowspan="3">Student Forum &amp; Closing<span class="s-kind">10:30–12:00</span></td>
+</tr>
+<tr>
+  <th scope="row">11:00</th>
+  <td class="s-lecture" rowspan="2"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture<span class="s-time">11:00–12:00</span></span></td>
+</tr>
+<tr>
+  <th scope="row">11:30</th>
 </tr>
 <tr class="s-break"><th scope="row">12:00–13:30</th><td colspan="5">Lunch</td></tr>
 <tr>
-  <th scope="row">13:30–15:30</th>
+  <th scope="row">13:30–15:00</th>
   <td class="s-lecture"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
-  <td class="s-tba" rowspan="3">TBA</td>
-</tr>
-<tr class="s-break"><th scope="row">15:30–16:00</th><td colspan="4">Coffee Break</td></tr>
-<tr>
-  <th scope="row">16:00–18:00</th>
   <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
+  <td class="s-tba" rowspan="4">Free afternoon<span class="s-kind">Return to Recife</span></td>
+</tr>
+<tr class="s-break"><th scope="row">15:00–15:30</th><td colspan="4">Coffee Break</td></tr>
+<tr>
+  <th scope="row">15:30–17:00</th>
+  <td class="s-lecture">Gustavo Pinto<span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture</span></td>
-  <td class="s-lecture">Gustavo Pinto<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
+</tr>
+<tr>
+  <th scope="row">17:00–18:00</th>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-monperrus" data-lecturer="lecturer-monperrus">Martin Monperrus</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-vasilescu" data-lecturer="lecturer-vasilescu">Bogdan Vasilescu</a><span class="s-kind">Lecture</span></td>
+  <td class="s-handson"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Hands-on</span></td>
 </tr>
 </tbody>
 </table>
