@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1628"/>
+      <stop offset="1" stop-color="#4a148c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Bounded contexts with connected agents -->
+  <g fill="none" stroke-width="4">
+    <rect x="470" y="60" width="140" height="110" rx="18" stroke="#ce93d8"/>
+    <rect x="600" y="220" width="150" height="120" rx="18" stroke="#80deea"/>
+    <path d="M580 150 C 620 200, 640 200, 660 260" stroke="#e1bee7" stroke-linecap="round" stroke-dasharray="2 12"/>
+  </g>
+  <g stroke="#0b1628" stroke-width="4">
+    <circle cx="510" cy="100" r="14" fill="#ce93d8"/>
+    <circle cx="570" cy="130" r="14" fill="#ce93d8"/>
+    <circle cx="650" cy="270" r="14" fill="#80deea"/>
+    <circle cx="710" cy="300" r="14" fill="#80deea"/>
+  </g>
+  <g font-family="Inter, system-ui, sans-serif" fill="#ffffff">
+    <text x="48" y="150" font-size="56" font-weight="800" letter-spacing="-1.5">Agents,</text>
+    <text x="48" y="210" font-size="56" font-weight="800" letter-spacing="-1.5">Patterns &amp;</text>
+    <text x="48" y="270" font-size="56" font-weight="800" letter-spacing="-1.5">Modeling</text>
+    <text x="50" y="330" font-size="22" font-weight="600">CIn/UFPE · Recife</text>
+    <text x="50" y="362" font-size="22" font-weight="500" fill="#e1bee7">November 30</text>
+  </g>
+</svg>
