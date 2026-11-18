@@ -1,0 +1,40 @@
+{{/* Card for one application inside a case-study domain.
+     Context: an app map from the `apps` list in data/case-studies.yaml.
+     Links are rendered in a fixed order and only when non-empty. */}}
+{{ $app := . }}
+{{ $linkTypes := slice
+  (dict "field" "website"   "label" "Visit website"  "aria" "%s website")
+  (dict "field" "playStore" "label" "Google Play"    "aria" "%s on Google Play")
+  (dict "field" "appStore"  "label" "App Store"      "aria" "%s on the App Store")
+  (dict "field" "repo"      "label" "Source code"    "aria" "%s source code")
+}}
+{{ $links := slice }}
+{{ range $type := $linkTypes }}
+  {{ with index ($app.links | default dict) $type.field }}
+    {{ $links = $links | append (merge $type (dict "url" .)) }}
+  {{ end }}
+{{ end }}
+<article class="app-card" id="{{ $app.key | default ($app.name | urlize) }}">
+  <div class="app-card-head">
+    {{ with $app.logo }}
+    <img class="app-card-logo" src="{{ . }}" alt="" width="48" height="48" loading="lazy">
+    {{ else }}
+    {{ $initials := "" }}
+    {{ range first 2 (split (replaceRE `[^\p{L}\p{N}]+` " " $app.name | strings.TrimSpace) " ") }}{{ $initials = printf "%s%s" $initials (substr . 0 1) }}{{ end }}
+    {{ if eq (len $initials) 1 }}{{ $initials = substr ($app.name | upper) 0 2 }}{{ end }}
+    <span class="app-card-logo app-card-logo--initials" aria-hidden="true">{{ $initials | upper }}</span>
+    {{ end }}
+    <div class="app-card-heading">
+      <h3 class="app-card-name">{{ $app.name }}</h3>
+      {{ with $app.subtitle }}<p class="app-card-subtitle">{{ . }}</p>{{ end }}
+    </div>
+  </div>
+  <p class="app-card-desc">{{ $app.description }}</p>
+  <div class="app-card-links">
+    {{ range $links }}
+    <a class="app-link{{ if eq .field "website" }} app-link--primary{{ end }}" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ printf .aria $app.name }} (opens in a new tab)">{{ .label }} <span aria-hidden="true">↗</span></a>
+    {{ else }}
+    <span class="app-card-pending">Access links coming soon</span>
+    {{ end }}
+  </div>
+</article>

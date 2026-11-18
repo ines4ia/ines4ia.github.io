@@ -1,0 +1,13 @@
+{{/* Line icon for a case-study domain, keyed by slug (same 64×64 stroke style
+     as theme-cover.html). Unknown slugs fall back to a generic "app" icon.
+     Context: a study map from data/case-studies.yaml. */}}
+{{ $icons := dict
+  "health" `<path d="M32 54S10 40 10 24a11 11 0 0 1 22-3 11 11 0 0 1 22 3c0 16-22 30-22 30z"/><path d="M16 32h9l4-8 6 14 4-6h9"/>`
+  "education" `<path d="M4 24l28-12 28 12-28 12z"/><path d="M16 29v12c0 5 7 9 16 9s16-4 16-9V29"/><path d="M60 24v14"/>`
+  "environmental-crisis-management" `<path d="M32 8s-14 16-14 26a14 14 0 0 0 28 0C46 24 32 8 32 8z"/><path d="M6 52c4 0 6-3 10-3s6 3 10 3 6-3 10-3 6 3 10 3 6-3 10-3"/>`
+  "justice" `<path d="M32 8v46M20 54h24M12 16h40"/><path d="M12 16L5 32h14zM52 16l-7 16h14z"/><path d="M5 32a7 4 0 0 0 14 0M45 32a7 4 0 0 0 14 0"/>`
+  "carbon-credits" `<path d="M14 50C14 26 30 12 54 10c-2 24-16 40-40 40z"/><path d="M14 50l22-22"/><path d="M8 56l6-6"/>`
+  "robotics" `<rect x="14" y="20" width="36" height="28" rx="6"/><circle cx="25" cy="33" r="3"/><circle cx="39" cy="33" r="3"/><path d="M26 41h12M32 20v-8M28 12h8M14 34H8M50 34h6"/>`
+}}
+{{ $default := `<rect x="12" y="12" width="40" height="40" rx="8"/><path d="M24 32h16M32 24v16"/>` }}
+<svg class="cs-icon" viewBox="0 0 64 64" aria-hidden="true">{{ index $icons .slug | default $default | safeHTML }}</svg>

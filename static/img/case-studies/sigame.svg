@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="SIGAME">
+  <defs>
+    <!-- SIGAME theme colors: primary hsl(221 83% 53%) to accent hsl(189 94% 43%), gradient to bottom right -->
+    <linearGradient id="sigame-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2463EB"/>
+      <stop offset="1" stop-color="#07B6D5"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#sigame-grad)"/>
+  <text x="24" y="24" dy="0.35em" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#FFFFFF">S</text>
+</svg>

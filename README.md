@@ -69,7 +69,7 @@ Qualquer alteração feita nos arquivos dentro das pastas `content/`, `data/`, `
 2. **Alterações de Estrutura/HTML**: Modifique os arquivos dentro do diretório `layouts/`.
 3. **Novas Imagens ou Favicons**: Adicione-os na pasta `static/` ou `static/img/`.
 4. **Estilos**: O CSS fica em `assets/css/main.css` e é processado pelo Hugo Pipes. Prefira os tokens já definidos no topo do arquivo (`--brand`, `--bg-surface`, `--text-dark-muted`, `--nav-h`) a valores fixos, para manter a identidade visual e o contraste.
-5. **Conteúdo estruturado**: Equipe, temas de pesquisa, teses, ferramentas e publicações vivem em `data/*.yaml`, não em `content/`.
+5. **Conteúdo estruturado**: Equipe, temas de pesquisa, estudos de caso, teses, ferramentas e publicações vivem em `data/*.yaml`, não em `content/`. Para adicionar um aplicativo a um domínio da página Case Studies, acrescente um item à lista `apps` do domínio em `data/case-studies.yaml` (campos documentados no topo do arquivo) — o layout se adapta sem alterar templates.
 6. **Nunca edite `data/publications.yaml` à mão**: ele é gerado. Edite `bibliography/publications.bib` e rode:
    ```bash
    python3 scripts/bib_to_yaml.py
