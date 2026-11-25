@@ -377,15 +377,6 @@ members:
     lattes: "http://lattes.cnpq.br/8681457281512244"
     webpage: "https://leusonmario.github.io/"
 
-  - name: "Mateus Baltazar de Almeida"
-    slug: "mateus-baltazar-de-almeida"
-    category: "Post-Doc Researcher"
-    role: "Research Contributor"
-    affiliation: "Centro de Inovação em Robótica e Inteligência Artificial Responsável - CRIAR"
-    bio: "Mateus Baltazar is an AI Tech Lead and holds a Master's degree in Computer Science, combining a solid foundation in Software Engineering with the rigor of academic research. A specialist in Generative Artificial Intelligence (LLMs, RAG, Fine-tuning, GANs) and Computer Vision, he has extensive experience in the technical leadership of research teams and in product development. His career stands out for the design of scalable and innovative technological solutions across multiple sectors: the Education Industry (EdTech), where he works on improving teaching practices using AI; agribusiness (AgTech), where he served as CTO developing predictive analytics; and the building and optimization of neural models for mobile devices (Edge AI). His main professional purpose is to translate complex challenges into practical, viable, and high-impact products for the market."
-    orcid: "https://orcid.org/0009-0008-0988-2392"
-    lattes: "http://lattes.cnpq.br/8703855182425853"
-
   - name: "Rafael Melo Macieira"
     slug: "rafael-melo-macieira"
     category: "Post-Doc Researcher"
