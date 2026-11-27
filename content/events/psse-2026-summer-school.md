@@ -94,6 +94,19 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
     <p>Bogdan Vasilescu is an Associate Professor in the School of Computer Science at Carnegie Mellon University, USA, and a member of the Software and Societal Systems Department, where he leads the STRUDEL lab (Socio-Technical Research Using Data Excavation). His research focuses on the socio-technical aspects of software development, including the health and sustainability of open-source ecosystems, diversity and human factors, and the impact of AI on software development practices. He was previously a postdoctoral researcher at UC Davis. He holds a Ph.D. in Computer Science from Eindhoven University of Technology (2014), whose dissertation received the Best Dissertation Award from the Institute for Programming Research and Algorithmics. He co-chaired the MSR 2023 program committee, is an Associate Editor of ACM TOSEM, and received Distinguished Reviewer Awards at ASE 2018 and ESEC/FSE 2021.</p>
   </details>
 </div>
+<div class="lecturer" id="lecturer-pinto">
+  <h3 class="lecturer-name"><a href="https://www.gustavopinto.org">Gustavo Pinto</a></h3>
+  <p class="lecturer-affil">Federal University of Pará (UFPA) &amp; iFood, Brazil</p>
+  <p class="lecturer-talk">Building Agent Harnesses We Can Trust</p>
+  <details class="lecturer-abstract">
+    <summary>Abstract</summary>
+    <p>Much of what looks like agent failure is harness failure: the agent does what its surroundings declare, reward, and reveal, and those surroundings are often wrong in ways that mislead the people overseeing it. This talk draws on three empirical studies, each examining one point in the loop with industrial data from a large company. Before the agent acts, skills declare what it may do: in 502 skills from an enterprise catalog, one in three describes a different level of autonomy than its body encodes, and the riskiest commands sit in skills whose labels do not advertise them. After it acts, coverage reports what tests check: across eight agent-assisted repositories, up to 30 percent of tests assert only that a value exists, and files with full line coverage kill no mutants, yet we find no sign that the agent weakens tests to pass; it writes what coverage rewards. When something breaks, diagnosis depends on production state the agent cannot see: in eight database incidents, every concurrency-related fix was later withdrawn, and each lacked access to live locks, full deadlock reports, or environment context. These gaps sit outside the model, so closing them means fixing what the harness declares, measures, and exposes, until its signals are ones we can trust.</p>
+  </details>
+  <details class="lecturer-abstract">
+    <summary>Bio</summary>
+    <p>Gustavo Pinto is an Assistant Professor at the Federal University of Pará (UFPA), Brazil, and a Staff Engineer at iFood. He holds a PhD in Software Engineering from the Informatics Center at the Federal University of Pernambuco (UFPE), Brazil. His interests span Open Source Software, Human Aspects of Software Engineering, and Empirical Software Engineering, with current work focusing on machine learning and LLMs applied to software engineering. He has published over 100 research papers, some in the most important venues in his field (e.g., ICSE, ASE, CSCW, TSE, CACM), accumulating 5,200+ citations (h-index: 40). He won several international research and service awards, including the MSR Ric Holt Early Career Achievement Award, in 2022, one ACM SIGSOFT Distinguished Paper award in ICSE 2021, and one JSS Paper of the Year in 2019.</p>
+  </details>
+</div>
 <div class="lecturer" id="lecturer-woodcock">
   <h3 class="lecturer-name">Jim Woodcock</h3>
   <p class="lecturer-affil">Southwest University, China &amp; Aarhus University, Denmark</p>
@@ -160,7 +173,7 @@ AI is fundamentally reshaping how software is conceived, built, tested, and main
 <tr class="s-break"><th scope="row">15:00–15:30</th><td colspan="4">Coffee Break</td></tr>
 <tr>
   <th scope="row">15:30–17:00</th>
-  <td class="s-lecture">Gustavo Pinto<span class="s-kind">Lecture</span></td>
+  <td class="s-lecture"><a class="s-link" href="#lecturer-pinto" data-lecturer="lecturer-pinto">Gustavo Pinto</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-soares" data-lecturer="lecturer-soares">Gustavo Soares</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-lammel" data-lecturer="lecturer-lammel">Ralf Lämmel</a><span class="s-kind">Lecture</span></td>
   <td class="s-lecture"><a class="s-link" href="#lecturer-abreu" data-lecturer="lecturer-abreu">Rui Abreu</a><span class="s-kind">Lecture</span></td>
